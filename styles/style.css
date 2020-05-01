@@ -8,14 +8,16 @@ body {
 	background-size: cover;
 }
 h1 {
-    color: white;
+	color: white;
+	text-align: center;
 }
 p {
-    color: white;
+	color: white;
 	text-align: justify;
 }
 h4 {
 	color: White;
+	text-align: center;
 }
 b {
 	color: White;
@@ -24,6 +26,24 @@ b {
 h1 {
 	color: White;
 }
+
+
+
+.content-wrapper {
+	display: block;
+	margin: auto;
+	max-height: 800px;
+	max-width: 800px;
+}
+
+
+
+
+
+
+
+
+
 .button {
     background-color: #ff0000; /* RED */
     border: none;
@@ -41,6 +61,13 @@ h1 {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+
+
+
+
+
+
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
