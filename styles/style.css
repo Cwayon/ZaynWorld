@@ -47,6 +47,17 @@ h1 {
 
 /*Button Navbar*/
 
+
+ul {
+list-style-type:none;
+margin:auto;
+padding:0;
+overflow:hidden;
+}
+li {
+float:left;
+}
+
 span.btn a:link,
 span.btn a:visited {
 	display: block;
