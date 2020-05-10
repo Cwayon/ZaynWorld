@@ -2,7 +2,7 @@ html *{
 	  font-family: FluxRegular;
 }
 body {
-	background-image: url("background2.gif");
+	background-image: url("background.gif");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
