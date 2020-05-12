@@ -78,16 +78,16 @@ span.about a:hover {
 span.about a:active {
 	background-position: -6px -50px;
 }
-span.us a:link,
-span.us a:visited {
+span.library a:link,
+span.library a:visited {
 	width: 96px;
 	height: 56px;
 	background: url(../Images/index/navbarIndex.jpg) -96px 0px no-repeat;
 }
-span.us a:hover {
+span.library a:hover {
 	background-position: -97px -56px;
 }
-span.us a:active {
+span.library a:active {
 	background-position: -102px -50px;
 }
 span.projects a:link,
