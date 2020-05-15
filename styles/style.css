@@ -14,6 +14,28 @@ header {
 	max-height: 800px;
 	max-width: 800px;
 }
+nav {
+	margin: auto;
+	max-width: 780px;
+	border: 1px solid red;
+	padding: 5px;
+	background-color: black;
+}
+aside {
+	float: left;
+	width: 170px;
+	position: fixed;
+	display: block;
+	border: 1px solid red;
+	background-color: black;
+	text-align: center;
+	color: white;
+}
+.binderSpace {
+	margin-left: 172px;
+	display: block;
+	padding: 1px;
+}
 img {
 	max-width: 100%;
 }
@@ -28,9 +50,9 @@ main {
 	display: block;
 	margin: auto;
 	max-height: 800px;
-	max-width: 780px;
+	max-width: 788px;
 	border: 1px solid red;
-	padding: 5px;
+	padding: 1px;
 	background-color: black;
 }
 
