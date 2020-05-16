@@ -6,25 +6,6 @@
 	<title>
 		Zayn.World
 	</title>
-<script type="text/javascript">
-	function getDocHeight(doc) {
-		doc = doc || document;
-		// from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
-		var body = doc.body, html = doc.documentElement;
-		var height = Math.max( body.scrollHeight, body.offsetHeight, 
-		html.clientHeight, html.scrollHeight, html.offsetHeight );
-		return height;
-	}
-	function setIframeHeight(id) {
-		// iframe solution from https://www.dyn-web.com/tutorials/iframes/height/
-		var ifrm = document.getElementById(id);
-		var doc = ifrm.contentDocument? ifrm.contentDocument: ifrm.contentWindow.document;
-		ifrm.style.visibility = 'hidden';
-		ifrm.style.height = "10px"; // reset to minimal height in case going from longer to shorter doc
-		ifrm.style.height = getDocHeight( doc ) + "px";
-		ifrm.style.visibility = 'visible';
-	}
-</script>
 </head>
 <body>
 <header>
@@ -32,14 +13,14 @@
 </header>
 <nav>
 <ul>
-	<li class="nav"><span class="btn about"><a href="test.html" target="binder">About</a></span></li>
-	<li class="nav"><span class="btn projects"><a href="test2.html" target="binder">Projects</a></span></li>
-	<li class="nav"><span class="btn fun"><a href="test3.html" target="binder">Fun</a></span></li>
-	<li class="nav"><span class="btn gallery"><a href="index.html" target="binder">Gallery</a></span></li>
-	<li class="nav"><span class="btn archive"><a href="index.html" target="binder">Archive</a></span></li>
-	<li class="nav"><span class="btn library"><a href="index.html" target="binder">Us</a></span></li>
-	<li class="nav"><span class="btn links"><a href="index.html" target="binder">Links</a></span></li>
-	<li class="nav"><span class="btn downloads"><a href="index.html" target="binder">Downloads</a></span></li>
+	<li class="nav"><span class="btn about"><a href="index.html">About</a></span></li>
+	<li class="nav"><span class="btn projects"><a href="index.html">Projects</a></span></li>
+	<li class="nav"><span class="btn fun"><a href="index.html">Fun</a></span></li>
+	<li class="nav"><span class="btn gallery"><a href="index.html">Gallery</a></span></li>
+	<li class="nav"><span class="btn archive"><a href="index.html">Archive</a></span></li>
+	<li class="nav"><span class="btn library"><a href="index.html">Us</a></span></li>
+	<li class="nav"><span class="btn links"><a href="index.html">Links</a></span></li>
+	<li class="nav"><span class="btn downloads"><a href="index.html">Downloads</a></span></li>
 </ul>
 </nav>
 <main>
@@ -57,10 +38,25 @@
 	</aside>
 	<div class="binderSpace">
 	<!-- binder is a metaphor for a binder that has pages to flip through -->
-	<iframe name="binder" src="./test.html" frameborder="0" width="100%" id="ifrm" onload="setIframeHeight(this.id)"></iframe>
-	</div>
-	<div style="float:bottom;">
-		<p>&nbsp;</p>
+		<p>
+        The content of the document......
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque gravida interdum arcu, vitae pulvinar ligula condimentum vitae. Vivamus condimentum dui eu ex volutpat interdum. Fusce eget mollis urna. Proin fringilla, sem at laoreet tempus, mi enim iaculis augue, non fringilla mauris libero molestie eros. Cras non mauris non mi tempus placerat. Sed tempor placerat auctor. Praesent erat dolor, egestas et malesuada nec, eleifend eu ante. Proin luctus metus nunc, non feugiat ante rutrum at. Vestibulum lobortis nisl nisl, sit amet interdum nunc bibendum et. Suspendisse ultricies odio sem, eu semper ante vestibulum eget. Nulla lorem turpis, ultricies id ultrices eget, dapibus quis tortor. Duis at augue faucibus, tempus velit nec, sodales lorem. Nam varius, diam id mollis pellentesque, nunc lorem molestie arcu, sit amet efficitur justo ante sit amet turpis. Curabitur facilisis id ex ut sollicitudin. Phasellus congue imperdiet metus, in sodales enim consectetur at. Duis arcu mauris, volutpat a auctor in, posuere sed nunc.
+
+Sed a dolor et velit fringilla porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In consectetur justo massa, ac varius urna mollis non. Suspendisse egestas ante quam, in accumsan urna tempor sed. Sed aliquam dolor massa, at mollis nibh tincidunt in. Pellentesque eros eros, sagittis ac augue ultricies, condimentum sollicitudin lorem. Pellentesque quis turpis tempor, luctus neque sed, sodales urna. Etiam placerat diam sed nulla mollis, id varius magna gravida. Cras mollis eleifend diam, sit amet eleifend purus hendrerit et. Donec in purus condimentum, placerat nisl in, volutpat neque. Nam lacinia orci est, id tempus sapien dictum et. Sed ante nulla, egestas et vehicula id, interdum quis nisi. Etiam non massa quis massa faucibus mollis. Proin pulvinar eros non ex dictum facilisis nec a felis. In nulla felis, mattis quis lorem at, pulvinar vulputate leo.
+
+Mauris ultrices, lorem id vehicula congue, sem est pulvinar lorem, ac tempus velit quam quis sapien. Sed gravida nisi felis, eget dignissim est placerat id. Curabitur dignissim ipsum eu tincidunt venenatis. Vivamus nec magna sit amet leo ultrices bibendum. Praesent bibendum lacinia facilisis. Maecenas vehicula quam a ultrices condimentum. Nunc interdum cursus faucibus. Vestibulum ornare, enim sit amet finibus convallis, felis sapien auctor justo, nec ornare urna tellus quis mi. Ut enim lorem, tristique ut lorem at, fermentum sodales odio. Aenean euismod, lorem vel viverra vehicula, neque diam lobortis leo, a pulvinar turpis leo id tellus. Nulla vel libero lacus.
+
+Integer ut maximus leo, ac mollis magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin scelerisque efficitur vestibulum. Etiam hendrerit rhoncus sapien, sit amet iaculis tortor iaculis et. In vel dapibus sem. Cras tempor nibh ut dictum bibendum. Maecenas non odio consequat felis consequat faucibus quis vel justo. Proin tincidunt arcu lectus, in ultricies tortor rutrum eget. Curabitur cursus luctus tellus, eu cursus metus iaculis in. Phasellus tincidunt viverra felis vitae vestibulum. In eu suscipit massa. Suspendisse sodales a neque a eleifend. Phasellus a tempus elit, eu vehicula nunc. Suspendisse potenti.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas libero at vestibulum aliquam. Maecenas eu metus sit amet tortor mollis ultrices at eget est. Cras viverra luctus turpis, a pellentesque quam tempus et. Nullam aliquam leo at aliquet ultricies. Curabitur non libero volutpat, gravida leo eget, rhoncus quam. Morbi nisl est, lacinia eget malesuada non, elementum non tortor.
+
+Integer ut maximus leo, ac mollis magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin scelerisque efficitur vestibulum. Etiam hendrerit rhoncus sapien, sit amet iaculis tortor iaculis et. In vel dapibus sem. Cras tempor nibh ut dictum bibendum. Maecenas non odio consequat felis consequat faucibus quis vel justo. Proin tincidunt arcu lectus, in ultricies tortor rutrum eget. Curabitur cursus luctus tellus, eu cursus metus iaculis in. Phasellus tincidunt viverra felis vitae vestibulum. In eu suscipit massa. Suspendisse sodales a neque a eleifend. Phasellus a tempus elit, eu vehicula nunc. Suspendisse potenti.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus egestas libero at vestibulum aliquam. Maecenas eu metus sit amet tortor mollis ultrices at eget est. Cras viverra luctus turpis, a pellentesque quam tempus et. Nullam aliquam leo at aliquet ultricies. Curabitur non libero volutpat, gravida leo eget, rhoncus quam. Morbi nisl est, lacinia eget malesuada non, elementum non tortor.
+        </p>
+
 	</div>
 </main>
 <footer>

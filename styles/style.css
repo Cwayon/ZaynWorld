@@ -23,7 +23,7 @@ nav {
 }
 aside {
 	float: left;
-	width: 170px;
+	width: 169px;
 	display: block;
 	border: 1px solid red;
 	background-color: black;
@@ -32,26 +32,17 @@ aside {
 .binderSpace {
 	margin-left: 172px;
 	display: block;
+	border: 1px solid red;
 	padding: 2px;
+	background-color: black;
 }
 img {
 	max-width: 100%;
 }
-
-iframe {
-	padding: 0;
-	margin: 0;
-	border:none;
-	padding-bottom: 12px;
-}
 main {
 	display: block;
 	margin: auto;
-	max-height: 800px;
-	max-width: 788px;
-	border: 1px solid red;
-	padding: 1px;
-	background-color: black;
+	max-width: 792px;
 }
 footer {
 	text-align: center;
