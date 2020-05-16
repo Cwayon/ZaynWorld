@@ -68,6 +68,14 @@ h1 {
 	color: White;
 }
 
+
+
+
+
+
+
+
+
 /*Button Navbar*/
 
 
@@ -190,3 +198,68 @@ span.downloads a:active {
 	background-position: -678px -50px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* begin styles for RSS Feed */
+
+.rss-box {
+	 margin: 1em;
+	 width: 140px;
+	 background-color: #000000;
+}
+.rss-items {
+	margin-top:0px;
+	padding:0.5em; 0.5em;
+	margin-left:0px;
+	color:#FFFFFF;
+	text-align: right;
+}
+p.rss-title {padding:0.5em;}
+.rss-title {
+        text-transform:uppercase;
+	text-decoration: none;
+	font-family: Courier;
+	font-size: 12px;
+	background-color:#000;
+	color:#ccc;
+	font-weight:bold;
+	margin: 0px;
+        margin-bottom: 10px;
+	padding:0em;
+	text-align: right;
+}
+
+.rss-item  {
+  font-family: Courier;
+  font-size: 12px;
+  font-weight : normal;
+  list-style:none;
+  padding-bottom:0em;
+}
+
+.rss-item a {
+	text-decoration : none;
+	color: #ad9;
+	font-size: 12px;
+	font-weight:light;
+	font-family:Courier;
+	}
+	
+.rss-item a:hover {
+	color:#fff;
+}
+
+.rss-date {
+	font-size: 85%;
+	font-weight : normal;
+	color: #fff;
+	} 
