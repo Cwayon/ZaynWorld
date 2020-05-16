@@ -24,17 +24,15 @@ nav {
 aside {
 	float: left;
 	width: 170px;
-	position: fixed;
 	display: block;
 	border: 1px solid red;
 	background-color: black;
-	text-align: center;
 	color: white;
 }
 .binderSpace {
 	margin-left: 172px;
 	display: block;
-	padding: 1px;
+	padding: 2px;
 }
 img {
 	max-width: 100%;
@@ -84,11 +82,17 @@ list-style-type:none;
 margin:auto;
 padding:0;
 overflow:hidden;
+display: block;
+justify-content: center;
+}
+li.nav {
+float: left;
+border-bottom: 0;
 }
 li {
-float:left;
+text-align: center;
+border-bottom: 1px solid #555;
 }
-
 span.btn a:link,
 span.btn a:visited {
 	display: block;
