@@ -105,7 +105,7 @@ span.about a:link,
 span.about a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) 0px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) 0px 0px no-repeat;
 }
 span.about a:hover {
 	background-position: -1px -56px;
@@ -117,7 +117,7 @@ span.library a:link,
 span.library a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -96px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -96px 0px no-repeat;
 }
 span.library a:hover {
 	background-position: -97px -56px;
@@ -129,7 +129,7 @@ span.projects a:link,
 span.projects a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -192px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -192px 0px no-repeat;
 }
 span.projects a:hover {
 	background-position: -193px -56px;
@@ -141,7 +141,7 @@ span.fun a:link,
 span.fun a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -288px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -288px 0px no-repeat;
 }
 span.fun a:hover {
 	background-position: -289px -56px;
@@ -153,7 +153,7 @@ span.gallery a:link,
 span.gallery a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -384px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -384px 0px no-repeat;
 }
 span.gallery a:hover {
 	background-position: -385px -56px;
@@ -165,7 +165,7 @@ span.archive a:link,
 span.archive a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -480px -0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -480px -0px no-repeat;
 }
 span.archive a:hover {
 	background-position: -481px -56px;
@@ -177,7 +177,7 @@ span.links a:link,
 span.links a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -576px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -576px 0px no-repeat;
 }
 span.links a:hover {
 	background-position: -577px -56px;
@@ -189,7 +189,7 @@ span.downloads a:link,
 span.downloads a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.jpg) -672px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -672px 0px no-repeat;
 }
 span.downloads a:hover {
 	background-position: -673px -56px;
