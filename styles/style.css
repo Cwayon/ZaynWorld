@@ -17,9 +17,7 @@ header {
 nav {
 	margin: auto;
 	max-width: 780px;
-	border: 1px solid red;
 	padding: 5px;
-	background-color: black;
 }
 aside {
 	float: left;
