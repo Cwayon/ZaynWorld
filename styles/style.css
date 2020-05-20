@@ -3,9 +3,6 @@ html *{
 }
 body {
 	background-image: url("background4.gif");
-/*	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;*/
 }
 
 header {
@@ -52,7 +49,7 @@ h1 {
 }
 p {
 	color: white;
-	text-align: justify;
+	text-align: center;
 }
 h4 {
 	color: White;
@@ -61,10 +58,7 @@ h4 {
 b {
 	color: White;
 }
-}
-h1 {
-	color: White;
-}
+
 
 
 
