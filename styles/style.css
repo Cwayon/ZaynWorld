@@ -1,5 +1,13 @@
 html *{
-	  font-family: FluxRegular;
+	font-family: FluxRegular;
+}
+@font-face {
+    font-family: IBM;
+    src: url("PxPlus_IBM_VGA8.ttf");
+}
+@font-face {
+    font-family: Nintendo;
+    src: url("Nintendo-DS-BIOS.ttf");
 }
 body {
 	background-image: url("background4.gif");
@@ -46,6 +54,7 @@ footer {
 h1 {
 	color: white;
 	text-align: center;
+	font-family: IBM;
 }
 p {
 	color: white;
@@ -54,6 +63,7 @@ p {
 h4 {
 	color: White;
 	text-align: center;
+	font-family: IBM;
 }
 b {
 	color: White;
