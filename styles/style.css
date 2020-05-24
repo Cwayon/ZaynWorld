@@ -1,5 +1,5 @@
 html *{
-	font-family: FluxRegular;
+	font-family: IBm;
 }
 @font-face {
     font-family: IBM;
@@ -59,6 +59,7 @@ h1 {
 p {
 	color: white;
 	text-align: center;
+	font-family: FluxRegular;
 }
 h4 {
 	color: White;
@@ -70,27 +71,29 @@ b {
 }
 
 .contents {
-	border: 1px solid red;
+	border: white;
+	border-style: dashed;
 	text-align: left;
 	color: white;
-	width: 30%;
+	width: auto;
 	float: left;
+	padding: 0px 10px 30px 0px;
 }
 
 button {
     background-color: lightgrey;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     vertical-align: top;
-    margin: 4px 10px 4px 10px;
+    margin: 4px 5px 4px 10px;
 }
 
 button:active {
-    margin: 6px 10px 2px 10px;
+    margin: 4px 5px 4px 10px;
     background-color: Grey;
 }
 
 button:hover {
-	margin: 4px 10px 4px 10px;
+    	margin: 4px 5px 4px 10px;
 	background-color: grey;
 }
 
