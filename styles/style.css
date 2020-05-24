@@ -69,13 +69,34 @@ b {
 	color: White;
 }
 
+.contents {
+	border: 1px solid red;
+	text-align: left;
+	color: white;
+	width: 30%;
+	float: left;
+}
 
 
+/* unvisited link */
+a:link {
+  color: aqua;
+}
 
+/* visited link */
+a:visited {
+  color: blueviolet;
+}
 
+/* mouse over link */
+a:hover {
+  color: grey;
+}
 
-
-
+/* selected link */
+a:active {
+  color: Dimgrey;
+}
 
 
 /*Button Navbar*/
@@ -93,7 +114,7 @@ li.nav {
 float: left;
 border-bottom: 0;
 }
-li {
+li.aside {
 text-align: center;
 border-bottom: 1px solid #555;
 }
