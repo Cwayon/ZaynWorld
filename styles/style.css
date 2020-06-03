@@ -56,6 +56,11 @@ h1 {
 	text-align: center;
 	font-family: IBM;
 }
+h2 {
+	color: white;
+	text-align: center;
+	font-family: IBM;
+}
 p {
 	color: white;
 	text-align: center;
@@ -68,6 +73,14 @@ h4 {
 }
 b {
 	color: White;
+}
+
+q {
+
+	color: white;
+	text-align: center;
+	font-family: FluxRegular;
+	font-style: italic;
 }
 
 .contents {
