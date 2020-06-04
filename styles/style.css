@@ -99,16 +99,17 @@ button {
     vertical-align: top;
     margin: 4px 5px 4px 10px;
     padding: 10px 10px 10px 20px;
+	border-width: 5px;
 }
 
 button:active {
     margin: 4px 5px 4px 10px;
-    background-color: Grey;
+    background-color: #999999;
 }
 
 button:hover {
     	margin: 4px 5px 4px 10px;
-	background-color: grey;
+	background-color: #999999;
 }
 
 /* unvisited link */
