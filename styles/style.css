@@ -19,7 +19,7 @@ header {
 nav {
 	margin: auto;
 	max-width: 780px;
-	padding: 5px;
+	padding-bottom: 5px;
 }
 aside {
 	float: left;
