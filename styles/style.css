@@ -88,7 +88,7 @@ q {
 	border-style: dashed;
 	text-align: left;
 	color: white;
-	width: auto;
+	width: 153px;
 	float: left;
 	padding: 0px 10px 30px 0px;
 }
@@ -150,6 +150,7 @@ span.btn a:link,
 span.btn a:visited {
 	display: block;
 	text-indent: -9999px;
+	max-width: 96px;
 }
 
 span.about a:link,
