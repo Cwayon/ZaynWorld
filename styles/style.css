@@ -6,10 +6,6 @@ html *{
     font-family: IBM;
     src: url("PxPlus_IBM_VGA8.ttf");
 }
-@font-face {
-    font-family: Nintendo;
-    src: url("Nintendo-DS-BIOS.ttf");
-}
 body {
 	background-image: url("background4.gif");
 }
@@ -65,7 +61,7 @@ h2 {
 p {
 	color: white;
 	text-align: center;
-	font-family: FluxRegular;
+		font-family: Times;
 }
 .white {
 	color: white;
@@ -83,7 +79,7 @@ q {
 
 	color: white;
 	text-align: center;
-	font-family: FluxRegular;
+	font-family: Times;
 	font-style: italic;
 }
 
