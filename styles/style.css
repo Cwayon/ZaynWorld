@@ -1,6 +1,6 @@
 html *{
 	font-family: IBm;
-	cursor: url(angled.cur) 0 0, auto;
+/*	cursor: url(angled.cur) 0 0, pointer !important;*/
 }
 @font-face {
     font-family: IBM;
@@ -95,7 +95,7 @@ q {
 /*marquee*/
 
 .marquee {
-	width: 600px;
+	width: 100%;
 	line-height: 5px;
 	white-space: nowrap;
 	overflow: hidden;
