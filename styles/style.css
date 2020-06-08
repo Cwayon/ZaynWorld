@@ -263,7 +263,7 @@ span.downloads a:link,
 span.downloads a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/index/navbarIndex.gif) -672px 0px no-repeat;
+	background: url(../Images/index/navbarIndex.gif) -673px 0px no-repeat;
 }
 span.downloads a:hover {
 	background-position: -673px -56px;
