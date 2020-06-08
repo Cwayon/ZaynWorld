@@ -112,6 +112,29 @@ q {
 }
 
 
+/*Table*/
+
+td, th {
+    border-style: inset;
+    border-width: 6px;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: bottom;
+}
+table {
+	border-style: outset;
+border-width: 6px;
+border-spacing: 4px;
+    border-collapse: separate;
+    border-spacing: 4px;
+    caption-side: bottom;
+    empty-cells: show;
+	background-color: lightgrey;
+	width: 100%;
+}
+
+
+
 /*buttons*/
 
 
