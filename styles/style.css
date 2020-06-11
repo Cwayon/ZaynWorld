@@ -119,15 +119,15 @@ td, th {
     border-width: 4px;
     padding: 0.2em;
     text-align: center;
-    vertical-align: bottom;
+	vertical-align: middle;
 }
 table {
 	border-style: outset;
-border-width: 4px;
-border-spacing: 4px;
-    border-collapse: separate;
-    caption-side: bottom;
-    empty-cells: show;
+	border-width: 4px;
+	border-spacing: 4px;
+	border-collapse: separate;
+	caption-side: bottom;
+	empty-cells: hide;
 	background-color: lightgrey;
 	width: 100%;
 }
