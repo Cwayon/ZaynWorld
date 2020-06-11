@@ -153,12 +153,12 @@ button {
 }
 
 button:active {
-    margin: 4px 5px 4px 10px;
+    margin: 4px 5px 4px 4px;
     background-color: #999999;
 }
 
 button:hover {
-    	margin: 4px 5px 4px 10px;
+    	margin: 4px 5px 4px 4px;
 	background-color: #999999;
 }
 
