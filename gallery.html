@@ -33,6 +33,10 @@
 	<style>	
 	body {
 	background-image: url("Images/gallery/background5.gif");
+	font-family: Times;
+	}
+	h1, h2, h4, a {
+	font-family: Times;
 	}
 	/* unvisited link */
 	a:link {
@@ -50,7 +54,7 @@
 	border-width: 30px;
 	padding: 1px;
 	border-image: url("Images/gallery/border.png") 30 round;
-	width: 760px;
+	width: 710px;
 	}
 	</style>
 </head>
@@ -72,11 +76,11 @@
 </ul>
 </nav>
 <main>
-	<h1> Page Contents</h1>
-	<ul>
-		<button onclick="location.href='#top'"><li>About This Page</li></button>
-		<button onclick="location.href='#zayn'"><li>About Zayn</li></button>
-		<button onclick="location.href='#io'"><li>About Io</li></button>
+	<h1>Gallery</h1>
+	<ul class="navgallery">
+		<li class="nav"><img src="Images/gallery/earth.gif"><br><button onclick="location.href='#earth'">Earth</button></li>
+		<li class="nav"><img src="Images/gallery/skyline.gif"><button onclick="location.href='#city'">City</button></li>
+		<li class="nav"><img src="Images/gallery/moon.gif"><button onclick="location.href='#sky'"><li>Sky</button></li>
 	</ul>
 </main>
 <footer>

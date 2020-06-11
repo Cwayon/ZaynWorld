@@ -21,6 +21,12 @@ nav {
 	max-width: 780px;
 	padding-bottom: 5px;
 }
+.navgallery {
+	margin: auto auto auto 30%;
+	display: inline-block;
+	list-style: none;
+	text-align: center;
+}
 aside {
 	float: left;
 	width: 169px;
@@ -30,7 +36,7 @@ aside {
 	color: white;
 }
 .sticky {
-  position: -webkit-sticky;
+  position: -webkit-sticky; /*safari*/
   position: sticky;
   top: 0;
   padding: 5px;
@@ -187,6 +193,7 @@ justify-content: center;
 li.nav {
 float: left;
 border-bottom: 0;
+width: 96px;
 }
 li.aside {
 text-align: center;
