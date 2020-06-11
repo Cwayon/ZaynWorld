@@ -94,9 +94,9 @@ q {
 	border-style: dashed;
 	text-align: left;
 	color: white;
-	width: 153px;
+	width: 163px;
 	float: left;
-	padding: 0px 10px 30px 0px;
+	padding: 0px 0px 30px 0px;
 }
 /*marquee*/
 
@@ -144,12 +144,12 @@ table {
 
 
 button {
-    background-color: lightgrey;
-    padding: 10px 10px 10px 20px;
-    vertical-align: top;
-    margin: 4px 5px 4px 10px;
-    padding: 10px 10px 10px 20px;
+	background-color: lightgrey;
+	padding: 5px 5px 5px 5px;
+	vertical-align: top;
+	margin: 4px 5px 4px 4px;
 	border-width: 5px;
+	width: 90%;
 }
 
 button:active {
