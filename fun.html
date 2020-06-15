@@ -200,12 +200,24 @@
 			</object>
 	<A NAME="rally"></a>
 		<h4>Desert Rally</h4>
+			<div id="myDIV">
 			<object type="application/x-shockwave-flash" data="swf/desertrally.swf" width="600" height="300"> 
 			    <param name="movie" value="swf/desertrally.swf" />
 			    <param name="quality" value="high" />
 			</object>
+			</div>
 	<p>You can turn off Desert Rally if you'd prefer without the music<br>
-	<button onclick="location.href='fundr.html#rally'"><li> Turn off Desert Rally</li></button>
+	<button onclick="myFunction()"><li> Turn off Desert Rally</li></button>
+		<script>
+		function myFunction() {
+		  var x = document.getElementById("myDIV");
+		  if (x.style.display === "none") {
+		    x.style.display = "block";
+		  } else {
+		    x.style.display = "none";
+		  }
+		}
+		</script>
 	</p>
 	</div>
 </main>
