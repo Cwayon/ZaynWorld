@@ -183,6 +183,10 @@ a:visited {
   color: blueviolet;
 }
 
+/* hover link */
+a:hover {
+  color: AliceBlue;
+}
 
 /*Button Navbar*/
 
