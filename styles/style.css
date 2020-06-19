@@ -129,6 +129,7 @@ q {
 td, th {
     border-style: inset;
     border-width: 4px;
+	border-color: lightgrey;
     padding: 0.2em;
     text-align: center;
 	vertical-align: middle;
@@ -136,6 +137,7 @@ td, th {
 table {
 	border-style: outset;
 	border-width: 4px;
+	border-color: lightgrey;
 	border-spacing: 4px;
 	border-collapse: separate;
 	caption-side: bottom;
@@ -155,16 +157,19 @@ button {
 	vertical-align: top;
 	margin: 4px 5px 4px 4px;
 	border-width: 5px;
+	border-color: lightgrey;
 	width: 90%;
 }
 
 button:active {
     margin: 4px 5px 4px 4px;
     background-color: #999999;
+	border-color: lightgrey;
 }
 
 button:hover {
     	margin: 4px 5px 4px 4px;
+	border-color: lightgrey;
 	background-color: #999999;
 }
 
