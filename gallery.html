@@ -32,7 +32,7 @@
 	</title>
 	<style>	
 	body {
-	background-image: url("Images/gallery/background5.gif");
+	background-image: url("Images/gallery/background5.gif") !important;
 	font-family: Times;
 	}
 	h1, h2, h4, a {
@@ -56,6 +56,11 @@
 	border-image: url("Images/gallery/border.png") 30 round;
 	width: 710px;
 	}
+	img.photo {
+	-webkit-box-shadow: 0px 0px 55px 43px rgba(0,0,0,1);
+-moz-box-shadow: 0px 0px 55px 43px rgba(0,0,0,1);
+box-shadow: 0px 0px 55px 43px rgba(0,0,0,1);
+	}
 	</style>
 </head>
 <body>
@@ -76,18 +81,33 @@
 </ul>
 </nav>
 <main>
-	<h1>Gallery</h1>
+	<h1>12kb Gallery</h1>
 	<ul class="navgallery">
 		<li class="nav"><img src="Images/gallery/earth.gif"><br><button onclick="location.href='#earth'">Earth,</button></li>
 		<li class="nav"><img src="Images/gallery/skyline.gif"><button onclick="location.href='#city'">City</button></li>
 		<li class="nav"><img src="Images/gallery/moon.gif"><button onclick="location.href='#sky'"><li>& Sky</button></li>
 	</ul>
-	<A NAME="earth"></a>
-	<h1>Earth</h1>
-	<A NAME="city"></a>
-	<h1>City</h1>
-	<A NAME="sky"></a>
-	<h1>Sky</h1>
+	<br><br><A NAME="earth"></a>
+	<h1>Earth</h1><br><br>
+	
+	<p><img class="photo"  src="Images/gallery/photos/earth1.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/earth2.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/earth3.jpg"></p><br><br>
+	
+	<br><br><A NAME="city"></a>
+	<h1>City</h1><br><br>
+	
+	<p><img class="photo"  src="Images/gallery/photos/city1.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/city2.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/city3.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/city4.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/city5.jpg"></p><br><br>
+	
+	<br><br><A NAME="sky"></a>
+	<h1>Sky</h1><br><br>
+	
+	<p><img class="photo"  src="Images/gallery/photos/sky1.jpg"></p><br><br>
+	<p><img class="photo"  src="Images/gallery/photos/sky2.jpg"></p><br><br>
 </main>
 <footer>
 	<A HREF="#top">Back to top</A> 
