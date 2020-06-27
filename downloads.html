@@ -44,9 +44,14 @@
 	}
 	main {
 	background-color:#3d5a73 !important;
-		border-style: solid;
-		border-width: 1px;
-		border-color: #c4c4c4;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #c4c4c4;
+	box-shadow: 5px 5px #c4c4c4;
+	margin-bottom:10px;
+	}
+	header {
+	height:130px;
 	}
 	h1 {
 	color: #c4c4c4 !important;
@@ -58,6 +63,7 @@
 	color: #c4c4c4 !important;
 	}
 	/* unvisited link */
+	A {text-decoration: none;}
 	a:link {
 	  color: grey;
 	}
@@ -75,6 +81,12 @@
 	color: #c4c4c4 !important;
 	text-align: center;
 	}
+	.dwnnav { /*downloads navbar
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #c4c4c4;*/
+	font-size:14px;
+	}
 	</style>
 </head>
 <body>
@@ -90,18 +102,18 @@
 </header>
 <nav>
 <ul>
-	<li class="nav"><button onclick="location.href='index.html'">About</button></li>
-	<li class="nav"><button onclick="location.href='projects.html'">Projects</button></li>
-	<li class="nav"><button onclick="location.href='fun.html'">Fun</button></li>
-	<li class="nav"><button onclick="location.href='links.html'">Links</button></li>
-	<li class="nav"><button onclick="location.href='gallery.html'">Gallery</button></li>
-	<li class="nav"><button onclick="location.href='misc.html'">Misc</button></li>
-	<li class="nav"><button onclick="location.href='downloads.html'">Downloads</button></li>
-	<li class="nav"><button onclick="location.href='http://users4.smartgb.com/g/g.php?a=s&i=g44-80500-60'">Guestbook</button></li>
+	<li class="nav"><span class="dwnnav"><a href="index.html">[ About ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="projects.html">[ Projects ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="fun.html">[ Fun ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="links.html">[ Links ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="gallery.html">[ Gallery ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="misc.html">[ Misc ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="downloads.html">[ Downloads ]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-80500-60">[ Guestbook ]</a></span></li>
 </ul>
 </nav>
 <main>
-
+<p>testing<br><br><br>testing</p>
 </main>
 <footer>
 	<A HREF="#top">Back to top</A> 
