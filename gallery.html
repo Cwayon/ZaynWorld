@@ -31,8 +31,39 @@
 		Gallery
 	</title>
 	<style>
+	html *{
+		font-family: "Comic Sans MS", Times;
+		/*cursor: url(styles/funbluepurple.cur) 0 0, pointer !important;*/
+	}
 	body {
 	background-image: url("Images/gallery/background6.jpg")!important;
+	}
+	button {
+		background-color: GoldenRod;
+		padding: 5px 5px 5px 5px;
+		vertical-align: top;
+		margin: 4px 5px 4px 4px;
+		border-width: 5px;
+		border-color: GoldenRod;
+		width: 100%;
+	}
+
+	button:active {
+	    margin: 4px 5px 4px 4px;
+	    background-color: DarkGoldenRod;
+		border-color: GoldenRod;
+	}
+
+	button:hover {
+		margin: 4px 5px 4px 4px;
+		background-color: DarkGoldenRod;
+		border-color: GoldenRod;
+	}
+	.io {
+	border-style:ridge;
+	border-color:GoldenRod;
+	border-width:8px;
+	margin:10px;
 	}
 	</style>
 </head>
@@ -43,17 +74,18 @@
 </header>
 <nav class="sticky">
 <ul>
-	<li class="nav"><span class="btn about"><a href="index.html">About</a></span></li>
-	<li class="nav"><span class="btn projects"><a href="projects.html">Projects</a></span></li>
-	<li class="nav"><span class="btn fun"><a href="fun.html">Fun</a></span></li>
-	<li class="nav"><span class="btn links"><a href="links.html">Links</a></span></li>
-	<li class="nav"><span class="btn gallery"><a href="gallery.html">Gallery</a></span></li>
-	<li class="nav"><span class="btn archive"><a href="misc.html">Misc</a></span></li>
-	<li class="nav"><span class="btn downloads"><a href="downloads.html">Downloads</a></span></li>
-	<li class="nav"><span class="btn library"><a href="http://users4.smartgb.com/g/g.php?a=s&i=g44-80500-60">Guestbook</a></span></li>
+	<li class="nav"><form style="display: inline" action="index.html" method="get"><button>About</button></form></li>
+	<li class="nav"><form style="display: inline" action="projects.html" method="get"><button>Projects</button></form></li>
+	<li class="nav"><form style="display: inline" action="fun.html" method="get"><button>Fun</button></form></li>
+	<li class="nav"><form style="display: inline" action="links.html" method="get"><button>Links</button></form></li>
+	<li class="nav"><form style="display: inline" action="gallery.html" method="get"><button>Gallery</button></form></li>
+	<li class="nav"><form style="display: inline" action="misc.html" method="get"><button>Misc</button></form></li>
+	<li class="nav"><form style="display: inline" action="downloads.html" method="get"><button>Downloads</button></form></li>
+	<li class="nav"><form style="display: inline" action="http://users4.smartgb.com/g/g.php?a=s&i=g44-80500-60" method="get"><button>Guestbook</button></form></li>
 </ul>
 </nav>
 <main>
+	<img class="io" alt="Io Photo" src="Images/index/io/io2.jpg">
 </main>
 <footer>
 </footer>
