@@ -97,6 +97,8 @@ q {
 .contents {
 	border: white;
 	border-style: dashed;
+	border-image: url("contborder.gif") 10 repeat;
+	border-width:3px;
 	text-align: left;
 	color: white;
 	width: 163px;
