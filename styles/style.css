@@ -317,7 +317,6 @@ span.downloads a:active {
 
 /*For lower than 783px width resolutions.*/
 @media only screen and (max-width: 783px) {
-p{ color: red;}
 li.nav {margin-left: -8px;}/*Allows all buttons to be snug next to eachother, saving space*/
 button {width: 91.5% !important} /*Evens out all buttnos, similar to how they display by default on links page*/
 }
