@@ -39,7 +39,6 @@ aside {
   position: -webkit-sticky; /*safari*/
   position: sticky;
   top: 0;
-  padding: 5px;
 }
 .binderSpace {
 	margin-left: 172px;
@@ -316,3 +315,9 @@ span.downloads a:active {
 	background-position: -678px -50px;
 }
 
+/*For lower than 783px width resolutions.*/
+@media only screen and (max-width: 783px) {
+p{ color: red;}
+li.nav {margin-left: -8px;}/*Allows all buttons to be snug next to eachother, saving space*/
+button {width: 91.5% !important} /*Evens out all buttnos, similar to how they display by default on links page*/
+}
