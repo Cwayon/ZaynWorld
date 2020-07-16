@@ -1,0 +1,319 @@
+<html>
+    <head>
+        <title>Ask Yoldiz!</title>
+        <style>
+            
+            body {
+                background-color: black;
+                background-image: url('images/bg.gif');
+                color: magenta;
+                margin: none;
+                padding: none;
+            }
+            
+            #shade {
+                width: 100%;
+                height: 100%;
+                background-color: black;
+                opacity: 0.85;
+                position: fixed;
+                float: left;
+                z-index: -1;
+            }
+
+            #wrapper {
+                padding-top: 12%;
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            
+            #left_eye, #right_eye {
+                width: 165px;
+                height: 110px;
+            }
+            
+            #left_eye {
+                float: left;
+            }
+            
+            #right_eye {
+                float: right;
+            }
+            
+            #mouth {
+                width: 374px;
+                height: 143px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 50px;
+            }
+            
+            #message {
+                padding: 60px 0 0 0;
+                font-weight: bold;
+                font-size: 28px;
+                height: 150px;
+            }
+            
+            #buttons button {
+			  border-radius: 4px;
+			  border: none;
+			  font-family: Times;
+			  color: black;
+			  font-size: 16px;
+			  background: magenta;
+			  padding: 4px 8px 4px 8px;
+			  text-decoration: none;
+			  transition-duration: 1s;
+			}
+			
+			#buttons button:hover {
+				background: black;
+				color: magenta;
+				text-decoration: underline;
+			}
+
+            .hidden {
+                display: none;
+            }
+
+            .angry {
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div id=shade></div>
+        <div id="wrapper">
+            <div id="eyes">
+                <div onclick="pokeEye('left');" id="left_eye"></div>
+                <div onclick="pokeEye('right');" id="right_eye"></div>
+            </div>
+            <div id="mouth"></div>
+        
+            <p id="message"></p>
+            
+            <div class="hidden" id="buttons" />
+                <input id="question" type="text" placeholder="I wish to know.." />
+            	<button onclick="ask()">Please tell me oh Yoldiz!</button>
+            </div>
+        <div>
+
+        <audio id="music" autoplay loop>
+            <!-- <source src="sound/Glass_Boy_-_05_-_WELP.mp3" type="audio/mpeg"> -->
+        </audio>
+            
+        <script>
+            
+            String.prototype.replaceAll = function(searchStr, replaceStr) {
+            var str = this;
+            if(str.indexOf(searchStr) === -1) {
+                return str;
+            }
+            return (str.replace(searchStr, replaceStr)).replaceAll(searchStr, replaceStr);
+        }
+
+
+            var imageFolder = 'images/';
+            var soundTalk = new Audio('sound/frog.mp3');
+            
+            var leftEye = document.getElementById('left_eye');
+            var rightEye = document.getElementById('right_eye');
+            var mouth = document.getElementById('mouth');
+            var messageBox = document.getElementById('message');
+            var questionBox = document.getElementById('question');
+            var buttons = document.getElementById('buttons');
+            var music = document.getElementById('music');
+
+            var answers = [
+                'Into the sky ... the spotty {KEY} swam ... I know now ... the {KEY} will find its way ... to you ...',
+                '... Why would you speak to me about {KEY} ... I know ... but I will not tell ... a human!',
+                'I was a crow ... drowning in {KEY} ... yes yes the {KEY} ... it comes for you ... but who know if thats good!',
+                'The {KEY} was on ... a bike ... it sang to me ... I said hello {KEY} ... it did not speak ... we parted ways ...',
+                'I saw ... the {KEY} ... it was ... asking for a bathroom ... Oh wait ... I think I just needed to pee ...',
+                'Two kids ... were playing with {KEY} ... But ... they became angry ... and turned into lions ... the {KEY} became the sun ...'
+            ];
+
+            var mutters = [ 'TAZGA', 'ATRAMEP', 'POLOBUZ', 'so many', 'ahhh AH AH', 'Its you!', 'no more', 'YAS', '...',
+                'I.. I see', 'Oh no', 'heh', 'AZZAKA', 'Too many legs', 'so intreating', 'ZNGOG', 'STOP' ];
+            
+            var allowBlink = true;
+
+            window.onload = function()
+            {
+                music.volume = 0.5;
+
+                leftEye.style.backgroundImage = "url('"+imageFolder+"l_eye.png')";
+                rightEye.style.backgroundImage = "url('"+imageFolder+"r_eye.png')";
+                mouth.style.backgroundImage = "url('"+imageFolder+"closed_mouth.png')";
+                
+                blinkLoop();
+                setInterval(timeTalkLoop, 500);
+                
+                talk( 'Hello Human ... I am Yoldiz ... Welcome to my relam ...' );
+                //talk( 'When the monsters crossed the foggy river ... I dreamed of you ... mrumph');
+                talk( 'Speak your desire, and I shall tell you what Yoldiz dreamed ... ZNGOG PAMTABA' );
+            }
+            
+            var talkStack = [];
+            var timeTakeInProgress = false;
+            function talk( text )
+            {
+	            talkStack.push( function() { stackedTimeTalk( text ); } );
+            }
+            function stackedTimeTalk( text )
+            {
+	            timeTakeInProgress = true;
+	            setTimeout( function() { messageBox.innerHTML = ""; timeTalk( text + " " ); }, 1200 );
+            }
+            function timeTalk( text )
+            {   
+                if( text == "" || text == null  )
+                {
+	                timeTakeInProgress = false;
+                    return;
+                }
+                
+                var word = text.split(" ")[0] + " ";
+                
+                if( word == '... ' )
+                {
+                    messageBox.innerHTML += word;
+                    setTimeout( function() { timeTalk( text.substring(text.indexOf(" ") + 1)); }, 500 );
+                }
+                else if( word == 'CLOSE_EYES ' )
+                {
+                    closeLeftEye();
+                    closeRightEye();
+                    allowBlink = false;
+                    setTimeout( function() { timeTalk( text.substring(text.indexOf(" ") + 1)); }, 200 );
+                }
+                else if( word == 'OPEN_EYES ' )
+                {
+                    openLeftEye();
+                    openRightEye();
+                    allowBlink = true;
+                    setTimeout( function() { timeTalk( text.substring(text.indexOf(" ") + 1)); }, 200 );
+                }
+                else
+                {
+                    soundTalk.play();
+                    openMouth();
+                    messageBox.innerHTML += word;
+                    var wordTime = 90 * word.length;
+                    setTimeout( function() { closeMouth(); }, wordTime/3 );
+                    setTimeout( function() { timeTalk( text.substring(text.indexOf(" ") + 1)); }, wordTime );
+                }
+            }
+            function timeTalkLoop()
+            {   
+	            if( talkStack.length > 0 && !timeTakeInProgress )
+	            {
+		        	(talkStack.shift())();
+	            }
+
+                if( timeTakeInProgress)
+                {
+                    buttons.className = 'hidden';
+                }
+                else
+                {
+                    buttons.className = '';
+                }
+            }
+            
+            function blinkLoop()
+            {
+                if( allowBlink )
+                {
+                    blink();
+                }
+
+                setTimeout( function() { blinkLoop(); }, Math.floor((Math.random() * 6000) + 2000) );
+            }
+            function blink()
+            {
+                closeLeftEye();
+                closeRightEye();
+                setTimeout( function() { openLeftEye(); openRightEye(); }, 150 );
+            }
+            
+            function pokeEye( eye )
+            {
+	            if( eye == 'left' )
+	            {
+		            closeLeftEye();
+					setTimeout( function() { openLeftEye(); }, 300 );
+	            }
+	            else if( eye == 'right' )
+	            {
+					closeRightEye();
+					setTimeout( function() { openRightEye(); }, 300 );
+	            }
+	            
+	            talk( 'Ow! ... Bad Human ... zzglog' );
+            }
+            
+            function openMouth()
+            {
+                mouth.style.backgroundImage = "url('"+imageFolder+"open_mouth.png')";
+            }
+            function closeMouth()
+            {
+                mouth.style.backgroundImage = "url('"+imageFolder+"closed_mouth.png')";
+            }
+            function closeLeftEye()
+            {
+                leftEye.style.backgroundImage = "url('"+imageFolder+"l_eye_closed.png')";
+            }
+            function closeRightEye()
+            {
+                rightEye.style.backgroundImage = "url('"+imageFolder+"r_eye_closed.png')";
+            }
+            function openLeftEye()
+            {
+                leftEye.style.backgroundImage = "url('"+imageFolder+"l_eye.png')";
+            }
+            function openRightEye()
+            {
+                rightEye.style.backgroundImage = "url('"+imageFolder+"r_eye.png')";
+            }
+
+            //Button Functions
+
+            function ask()
+            {
+                var mutter = 'CLOSE_EYES zzzZZZ ... ';
+                for( var i=0 ; i<6 ; i++ )
+                {
+                    mutter += mutters[Math.floor(Math.random()*mutters.length)] + ' ... ';
+                }
+                mutter += ' I SEE IT! OPEN_EYES ...';
+
+                talk( mutter );
+
+                var questionWords = questionBox.value.split(' ').sort(function(a, b) { return b.length - a.length; });
+                questionBox.value = '';
+                var keyWord = questionWords[0];
+
+                if(keyWord == null || keyWord == '')
+                {
+                    talk( 'Sorry ... I had ... no vision of that thing ... ask ... something else! ...' );
+                    return;
+                }
+                keyWord = keyWord.toLowerCase();
+
+                var answer = answers[Math.floor(Math.random()*answers.length)].replaceAll('{KEY}', keyWord);
+                answer = answer.replaceAll('?','');
+
+                talk( answer + ' ... ... ...' );
+                talk( 'Want ... to ask ... again?' );
+            }
+            
+        </script>
+    </body>
+</html>
