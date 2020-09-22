@@ -45,7 +45,10 @@ aside {
 	display: block;
 	border: 1px solid red;
 	padding: 5px;
-	background-color: black;
+	/*background-color: black; */
+	-webkit-box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 0px 300px 200px rgba(0,0,0,0.6);
 }
 img {
 	max-width: 100%;
