@@ -31,7 +31,7 @@ aside {
 	float: left;
 	width: 169px;
 	display: block;
-	border: 1px solid red;
+	border: 1px solid white;
 	background-color: black;
 	color: white;
 }
@@ -44,6 +44,7 @@ aside {
 	margin-left: 172px;
 	display: block;
 	border: 1px solid red;
+	border-radius: 12px:
 	padding: 5px;
 	background-color: black;
 
