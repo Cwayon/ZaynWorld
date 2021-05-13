@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/cwayon
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zayn.world
+  * I am cwayon (https://keybase.io/cwayon) on keybase.
+  * I have a public key ASBE8Vnx_CSr6EPc3DVBvfZOWv6h5Nxo50gZtG_M18RxQQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012044f159f1fc24abe843dcdc3541bdf64e5afea1e4dc68e74819b46fccd7c471410a",
+      "host": "keybase.io",
+      "kid": "012044f159f1fc24abe843dcdc3541bdf64e5afea1e4dc68e74819b46fccd7c471410a",
+      "uid": "f3039cd4df300bc257f181e6b63b1e19",
+      "username": "cwayon"
+    },
+    "merkle_root": {
+      "ctime": 1620910907,
+      "hash": "18abf3a1aea031661efe5fa02887261522bfb6f45fe7c10d29f9aefa1454b83dc3db1a7e8af1f1ca746e48da654393cd25aa48f57deb492ad10720ac0c2039aa",
+      "hash_meta": "2de70dce8bf767064d86862beaa8e0251245c7f3bbf9bc17efe5f1e9b171ec02",
+      "seqno": 19930081
+    },
+    "service": {
+      "entropy": "8vAbc0RsrNjsKOcu0O2UfUFz",
+      "hostname": "zayn.world",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.2"
+  },
+  "ctime": 1620910989,
+  "expire_in": 504576000,
+  "prev": "61edc03d7366caf77dd807edd09fc905e4cf00d8ad1a35db9bd15c654c6a121f",
+  "seqno": 31,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgRPFZ8fwkq+hD3Nw1Qb32Tlr+oeTcaOdIGbRvzNfEcUEKp3BheWxvYWTESpcCH8QgYe3APXNmyvd92Aft0J/JBeTPANitGjXbm9FcZUxqEh/EIHva6h3BctfZHd9B2GxKygqLu+LOuMlIxtMLAdOoFZlcAgHCo3NpZ8RAHTe47pah6FPW69lUcpCaup/aMSyoOxTWsux+CW4Rz0gseC2BKa3Kwrfe5Fq77y6yh1e/QGjGHd/DU64teZ19CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMJ+3i6SlvaEp6zx5uLV3H+hBUNnpx5PuvW5RkrJDYvho3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cwayon
+
+==================================================================
