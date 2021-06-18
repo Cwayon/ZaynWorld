@@ -251,10 +251,10 @@ span.projects a:link,
 span.projects a:visited {
 	width: 96px;
 	height: 56px;
-	background: url(../Images/about/navbarIndex.gif) -192px 0px no-repeat;
+	background: url(../Images/about/navbarIndex.gif) -198px -50px no-repeat;
 }
 span.projects a:hover {
-	background-position: -193px -56px;
+	background-position: -197px -51px;
 }
 span.projects a:active {
 	background-position: -198px -50px;
