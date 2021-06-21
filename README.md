@@ -1,6 +1,6 @@
 # Welome to [Zayn.World](https://zayn.world)!
 
-A personal website!
+A personal homepage!
 
 You can visit it [here](https://zayn.world).
 
