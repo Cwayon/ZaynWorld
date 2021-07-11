@@ -27,6 +27,14 @@ YMMMUP^
 		body {
 		background-image: url("Images/misc/background4bw.gif") !important;
 		}
+		@keyframes bob {
+		0% { 
+		transform: translateX(8px); 	
+		}
+		100% { 
+		transform: translateX(-8px);
+		} 
+		}
 		main {
 		background-color: black;
 		margin: 0 auto;
@@ -64,6 +72,8 @@ YMMMUP^
 		  background: transparent;
 		  transform: rotate(390deg) translate(18em);   
 		}
+		
+	
 		.saturn img {
 		width: 200%;
 		}
@@ -74,8 +84,10 @@ YMMMUP^
 		}
 
 		.celestial img {
-		     width: 100%;
-		    height: auto;
+			width: 100%;
+			height: auto;
+			animation: bob 5s ease-in-out infinite;
+			animation-direction: alternate;
 		}
 
 		.celestial img {
