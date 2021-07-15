@@ -44,7 +44,19 @@
 	}
 	body {
 	background-image: url("Images/index/forest.png")!important;
+	-webkit-animation: scroll 10s linear infinite;
+	-moz-animation: scroll 10s linear infinite;
+	-o-animation: scroll 10s linear infinite;
+	animation: scroll 10s linear infinite;
 	}
+	@-webkit-keyframes scroll {
+	  from{
+	      background-position: 0 0;
+	  }
+	  to{
+	      background-position: 0 -105%;
+	  }
+	}	
 	main {
 	background-image: url("Images/index/natureinnertile.jpg")!important;
 	border-style: solid;
@@ -101,9 +113,9 @@
 <main>
 	<p>
 	<img src="Images/index/natureanimsmpic.gif" width="241px" height="273px"><br> 
-	<img src="Images/index/naturedividetop.gif" width="256px" height="20px"><br>
-	 <h1>Seems like you've wondered off the information highway for sometime now!</h1>
-	<a href="about.html">[Enter]</a><br>
+	<img src="Images/index/naturedividetop.gif" width="256px" height="20px"><br></p>
+	<h1>This is pretty far off route from the information highway!</h1>
+	<p><a href="about.html">[Enter]</a><br>
 	<img src="Images/index/naturedividebtm.gif" width="256px" height="20px">
 	</p>
 </main>
