@@ -7,6 +7,7 @@ html *{
     src: url("PxPlus_IBM_VGA8.ttf");
 }
 body {
+	background-color:black;
 	background-image: url("background4.gif");
 }
 
