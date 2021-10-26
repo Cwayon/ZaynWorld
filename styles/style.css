@@ -133,23 +133,29 @@ q {
 /*Table*/
 
 td, th {
-    border-style: inset;
+    border-style: solid;
     border-width: 4px;
-	border-color: gainsboro;
     padding: 0.2em;
     text-align: center;
 	vertical-align: middle;
+  border-top-color: #8F8F8F;
+  border-left-color: #8F8F8F;
+  border-right-color: white;
+  border-bottom-color: white;
 }
 table {
 	border-style: outset;
 	border-width: 4px;
-	border-color: gainsboro;
+ 	border-top-color: white;
+	border-left-color: white;
+	border-right-color: gainsboro;
+ 	border-bottom-color: gainsboro;
 	border-spacing: 4px;
 	border-collapse: separate;
 	caption-side: bottom;
 	empty-cells: hide;
-	background-color: lightgrey;
 	width: 100%;
+	background-color: lightgrey;
 }
 
 
@@ -163,7 +169,10 @@ button {
 	vertical-align: top;
 	margin: 4px 5px 4px 4px;
 	border-width: 5px;
-	border-color: gainsboro;
+ 	border-top-color: white;
+	border-left-color: white;
+	border-right-color: gainsboro;
+ 	border-bottom-color: gainsboro;
 	width: 90%;
 }
 
