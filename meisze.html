@@ -105,12 +105,7 @@
 	border-color: #c4c4c4;*/
 	font-size:14px;
 	}
-	.mySlides {display:none}
-	.center {
-	text-align: center;
-	font-family:  Helvetica, monospace;
-	}
-	.mySlides1 {display:none}
+	.mySlides, .mySlides1, .mySlides2 {display:none}
 	.center {
 	text-align: center;
 	font-family:  Helvetica, monospace;
@@ -180,34 +175,70 @@ I learnt that labour like this was a lot of fun but obviously hard work. Why not
 <br><br>
 I didn’t take many photos during my period of work here as my camera and phone were ideally kept away from paint and dust, but here are a few that I found:
 </p>
+<style>
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
 
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides" src="meisze/images/1.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/2.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/3.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/5.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/6.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/7.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/8.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/9.JPG" style="width:100%">
-  <img class="mySlides" src="meisze/images/4.JPG" style="width:100%">
-</div>
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+</style>
+	<div id="slideshow-example" data-component="slideshow">
+		<div role="list">
+			<div class="slide">
+				<img src="meisze/images/1.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/2.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/3.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/5.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/6.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/7.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/8.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/9.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="meisze/images/4.jpg" alt="">
+			</div>
+		</div>
+	</div>
+<script>
 
-<div class="w3-center">
-  <div class="w3-section">
-    <button class="center" style="width:383px" onclick="plusDivs(-1)">❮ Prev</button>
-    <button class="center" style="width:383px" onclick="plusDivs(1)">Next ❯</button>
-  </div>
-  <button class="center" style="width:73px" onclick="currentDiv(1)">1</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(2)">2</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(3)">3</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(4)">4</button> 
-  <button class="center" style="width:74px" onclick="currentDiv(5)">5</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(6)">6</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(7)">7</button> 
-  <button class="center" style="width:72px" onclick="currentDiv(8)">8</button> 
-  <button class="center" style="width:73px" onclick="currentDiv(9)">9</button> 
-</div>
+var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+slideshows.forEach(initSlideShow);
+
+function initSlideShow(slideshow) {
+
+	var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+
+	var index = 0, time = 5000;
+	slides[index].classList.add('active');
+
+	setInterval( () => {
+		slides[index].classList.remove('active');
+		
+		index++;
+		if (index === slides.length) index = 0;
+
+		slides[index].classList.add('active');
+
+	}, time);
+}
+</script>
 <br><br>
 <p>One of your posts is location tagged in Surbiton, thats local for me! It got me thinking…🤔</p>
 <br><br>
@@ -244,14 +275,34 @@ Most menswear has its roots in military and workwear with their references lacki
 <blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">RE Amemiya FD RX-7 with Botto Livery in London! <a href="https://t.co/fh2s4xBjq3">pic.twitter.com/fh2s4xBjq3</a></p>&mdash; Junglee Bongo zany/ 🤝 (@cwayon) <a href="https://twitter.com/cwayon/status/1519257798420451334?ref_src=twsrc%5Etfw">April 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 </p>
 <br><br><br>
-<p>Here is a bag project I am currently working on, it is in the toile stage of development:</p>
-
+<p>Here is a bag project I have been working on, here are some photos from the toile stage of development:</p>
 <div class="" style="max-width:800px">
   <img class="mySlides1" src="meisze/images/bag1.jpg" style="width:100%">
   <img class="mySlides1" src="meisze/images/bag2.jpg" style="width:100%">
   <img class="mySlides1" src="meisze/images/bag3.jpg" style="width:100%">
 </div>
+<p>I wanted to combine a few things that I like to meet some needs of mine that I couldn't fulfill using other products and systems. I used Acronym's design language and took inspiration from the modularity of the British Army's PLCE system. So it's nothing new.</p>
+<div class="" style="max-width:800px">
+  <img class="mySlides" src="meisze/images/labels.JPG" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag1.JPG" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag2.JPG" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag3.JPG" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag4.JPG" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag5.JPG" style="width:100%">
+</div>
 
+<div class="">
+  <div class="">
+    <button class="center" style="width:383px" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="center" style="width:383px" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="center" style="width:200px" onclick="currentDiv(1)">Index</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(2)">1</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(3)">2</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(4)">3</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(5)">4</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(6)">5</button> 
+</div>
 <script>
 var myIndex = 0;
 carousel();
@@ -341,7 +392,6 @@ function showDivs(n) {
     dots[i].className = dots[i].className.replace(" w3-red", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
 }
 </script>
 <br><br><br>
