@@ -1,0 +1,826 @@
+<!doctype html>
+<meta charset="utf-8" /> 
+<!--
+                                   ..::^^^~~~!!!!!!!!!!~~^:.                    
+                            ..:^^~~^^^::^7777777?77!~~^::::.                    
+                       .:^~~~^::.        ~77777!^:.                             
+                   :^~!!~:.              ~?777:                                 
+                 ~77??!.                 .!??!                                  
+                 ^!!7777~^^:..             ^!77~^::..                           
+                     ..:^^~~!!!!!~~~^^^:::....:^~~!!!!!!~~~~^^:::...            
+                   ..::^^^~~!777777???777!!!!!!~~:.  ...:::^^~~~!!!!!!!!~^:.    
+             .::^~~~^^:..    ~777777~^..     ..:~77!:              ..:^!77?77:  
+         :^~!~^::.           :7777~.             ^777:                 ^777!^   
+     .^!777^.                .7777.             :!777!           ..:^~!~^:.     
+     ~7???7~:..               :!7?!:..     ..:~!777777^   ..::^~~~~^:.          
+      .:^~~!!!!!!~~~^^:::....   .:~!!!!!!7777???7777777!~~~^^::.                
+              ....:::^^^~~~~!!!~~^^:...:::^^^~~!!!!777!~~^::.                   
+                             ..::^~77!^.           ...::^~!777!!~.              
+                                    ~?77^                   ~???7:              
+                                    !7777:              .:^!7!^:                
+                                 .^!77777!        ..:^~~~~^:.                   
+                       .....::^~!7?777777?!^^^^^~~~^^:.                         
+                       .:^~!!77777777!!!!~~^^::..                               
+                               .....    
+-->
+<html lang="en">
+<head>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>
+		Bag Project
+	</title>
+	<style>
+	html *{
+		font-family: ProjectX;
+	}
+	@font-face {
+	    font-family: ProjectX;
+	font-size: 12px;
+	}
+	body {
+	background-color:#ECFE3B !important;
+	background-size: 17%;
+	background-image: url("meisze/TMSSITEBG.svg")!important;
+		font-family: Helvetica;
+	i}
+	main {
+	background-color:#666665 !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #592F41;
+	box-shadow: 5px 5px #592F41;
+	margin-bottom:10px;
+	padding: 5%;
+	}
+	header {
+	height:130px;
+	}
+	h1 {
+	color: #592F41 !important;
+	}
+	h2 {
+	color: #592F41 !important;
+	}
+	h3 {
+	color: #592F41 !important;
+	}
+	h4 {
+	color: #592F41 !important;
+	}
+	p {
+	font-family: "Helvetica",arial,sans-serif !important;
+	color: #FAF9F6 !important;
+	}
+	/* unvisited link */
+	A {text-decoration: none;}
+	a:link {
+	  color: #592F41;
+	}
+	/*hover link*/
+	a:hover {
+	color:#ECFE3B !important;
+	background-color: #592F41;
+}
+	/* visited link */
+	a:visited {
+	  color: #592F41;
+	}
+	nav {
+	padding-bottom:10px;
+	background-color:#ECFE3B !important;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #592F41;
+	padding-top:10px;
+	}
+	pre {
+	font-family: IBM, monospace;
+	color: #592F41 !important;
+	text-align: center;
+	}
+	.dwnnav { /*downloads navbar
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #c4c4c4;*/
+	font-size:14px;
+	}
+	.mySlides, .mySlides1, .mySlides2 {display:none}
+	.center {
+	text-align: center;
+	font-family:  Helvetica, monospace;
+	}
+	.preholl {
+	background-color:#536397;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #592F41;
+	box-shadow: 5px 5px #592F41;
+	margin-bottom:10px;
+	padding: 5%;
+	color: #FAF9F6 !important;
+	}
+	button {
+	
+	}
+	.zoom {
+	transition: transform .3s;
+	}
+	.zoom:hover {
+  transform: scale(0.8); }
+	.twitter-tweet {
+    width: 100% !important;
+	text-align: center;
+}
+	.notbr-text {font-family: "Helvetica",arial,sans-serif !important; white-space: pre-wrap; font-size: var(--fixation-size); letter-spacing: var(--fixation-spacing); } .notbr-text p {font-family: "Helvetica",arial,sans-serif !important; font-weight: var(--fixation-weight2); line-height: var(--fixation-height); } .notbr-fixation {font-family: "Helvetica",arial,sans-serif !important; font-weight: var(--fixation-weight1); opacity: var(--fixation-opac); }	
+	</style>
+</head>
+<body>
+<header>
+	<A NAME="top"></a>
+	<pre>
+<!-- fudder spacing-->
+██████╗  █████╗  ██████╗     ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗
+██╔══██╗██╔══██╗██╔════╝     ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝
+██████╔╝███████║██║  ███╗    ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   
+██╔══██╗██╔══██║██║   ██║    ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   
+██████╔╝██║  ██║╚██████╔╝    ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   
+╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   
+</pre>
+</header>
+<nav>
+<ul>
+	<li class="nav"><span class="dwnnav"><a href="about.html">[About]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="projects.html">[Projects]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="fun.html">[Fun]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="links.html">[Links]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="gallery.html">[Gallery]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="misc.html">[Misc]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="downloads.html">[Downloads]</a></span></li>
+	<li class="nav"><span class="dwnnav"><a href="guestbook.html">[Guestbook]</a></span></li>
+</ul>
+</nav>
+<main>
+<h1> 
+some pictures of the final product</h1>
+<h1></h1>
+
+<p>
+Details of the construction and functionality below.
+</p>
+
+
+<style>
+.hcg-slider-body {
+	height: 100%;
+	width: 100%;
+}
+.hcg-slider {
+	text-align: center;
+	font-family:  Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	width: 100%;
+	height: 100%;
+	display: none;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	border: solid 1px #592F41;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+}
+#hcg-slide-prev, #hcg-slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+	text-shadow: 1px 1px 5px #686868;
+}
+#hcg-slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+#hcg-slide-prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+#hcg-slide-prev:hover, #hcg-slide-next:hover {
+	background-color: #000c;
+}
+
+</style>
+<body>
+<div id="hcg-slider-1" class="hcg-slider">
+	<div class="hcg-slide-container">
+	<div class="hcg-slider-body">
+		<a class="hcg-slides animated" style="display:flex">
+			<span class="hcg-slide-number">1/5</span>
+			<img src="meisze/images/1.jpg" alt="Image 1">
+			<span class="hcg-slide-text">Image 1</span>
+		</a>
+	</div>
+	<a href="#" id="hcg-slide-prev">❮</a>
+	<a href="#" id="hcg-slide-next">❯</a>
+</div>
+</div>
+
+
+<script>
+(() => {
+//If you want to add more images, add the link name and URL image URL in the array list below.
+	const images_list = [
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/1.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/2.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/3.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/5.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/6.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/7.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/8.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/9.JPG",
+},
+{
+    "url": "https://raw.githubusercontent.com/Cwayon/ZaynWorld/master/meisze/images/4.JPG",
+}
+	];
+
+// generated by https://www.html-code-generator.com/html/image-slideshow-generator
+	let slider_id = document.querySelector("#hcg-slider-1");
+
+	// append all images
+	let dots_div = "";
+	let images_div = "";
+	for (let i = 0; i < images_list.length; i++) {
+		// if no link without href="" tag
+		let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+		images_div += '<a'+href+' class="hcg-slides"'+(i === 0 ? ' style="display:flex"':'')+'>'+
+						'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+					 '</a>';
+	}
+	slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+	let slide_index = 0;
+
+	const images = slider_id.querySelectorAll(".hcg-slides");
+	const prev_button = slider_id.querySelector("#hcg-slide-prev");
+	const next_button = slider_id.querySelector("#hcg-slide-next");
+
+	const showSlides = () => {
+		if (slide_index > images.length-1) {
+			slide_index = 0;
+		}
+		if (slide_index < 0) {
+			slide_index = images.length-1;
+		}
+		for (let i = 0; i < images.length; i++) {
+			images[i].style.display = "none";
+			if (i == slide_index) {
+				images[i].style.display = "flex";
+			}
+		}
+	}
+
+	prev_button.addEventListener("click", event => {
+		event.preventDefault();
+		slide_index--;
+		showSlides();
+	}, false);
+
+	next_button.addEventListener("click", event => {
+		event.preventDefault();
+		slide_index++;
+		showSlides();
+	}, false);
+
+})();
+
+</script>
+
+<p>I will travel across London for oportunities!
+</p><br>
+<br><br><br>
+<h3>Heres a modular bag system project ive been working on:</h3>
+  <img class="" src="meisze/images/bongo.jpg" style="width:100%;">
+<p>At the toile stage of development it looked like this:</p>
+<div class="" style="max-width:800px">
+  <img class="mySlides1" src="meisze/images/bag1.jpg" style="width:100%">
+  <img class="mySlides1" src="meisze/images/bag2.jpg" style="width:100%">
+  <img class="mySlides1" src="meisze/images/bag3.jpg" style="width:100%">
+</div>
+<p>I wanted to combine a few things that I like, in order to meet some needs of mine that I couldn't fulfill using other products and systems. The final product looks quite different to my original plans, I lack that visualisation and experience... As I went, certain parts of my original plan just wouldn't work out, I had to improvise. I used Acronym's design language and took inspiration from the modularity of the British Army's PLCE (Personal Load Carrying Equipment) bergen side pouches and yoke. So it's nothing new & not my design.<br><br>I here try to explain some of it's features, please cycle through the pictures below:</p>
+
+<div class="" style="max-width:800px">
+  <img class="mySlides" src="meisze/images/labels.jpg" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag1.jpg" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag2.jpg" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag3.jpg" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag4.jpg" style="width:100%">
+  <img class="mySlides" src="meisze/images/cbag5.jpg" style="width:100%">
+</div>
+
+<div class="">
+  <div class="">
+    <button class="center" style="width:383px" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="center" style="width:383px" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="center" style="width:200px" onclick="currentDiv(1)">Index</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(2)">1</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(3)">2</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(4)">3</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(5)">4</button> 
+  <button class="center" style="width:100px" onclick="currentDiv(6)">5</button> 
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+<p>
+It's focused on some things I need to carry close to body and securely whilst cycling. The main sleeve is for an attache case and the molle removable pockets are for smaller bits and bobs. 
+</p>
+  <img class="" src="meisze/images/modular.jpg" style="width:100%;">
+  <img class="" src="meisze/images/openclose.gif" style="width:100%;">
+<p>
+To wear the molle pockets without the main attache case sleeve, we can clip them onto the yoke instead (right).
+</p>
+<style>
+.column {
+  float: left;
+  width: 350px;
+  padding: 23px;
+}
+</style>
+  <img class="column" style="" src="meisze/images/expand.gif" style="">
+  <img class="column" style="" src="meisze/images/plce.gif" style="">
+<p>
+Here is the bare yoke and straps.</p>
+  <img class="" src="meisze/images/yoke.jpg" style="width:100%;">
+<p>
+The pockets connect to the yoke via 6 25mm side release buckles. The shoulder straps connect to both the yoke and the main attache case sleeve via 2 25mm slide release buckles around the waist and 2 25mm webbing adjusters on the top of the shoulders (labelled as "bag to strap attachment point" above).
+</p>
+  <img class="" src="meisze/images/plcezip.jpg" style="width:100%;">
+<p>
+Thanks to my grandma and auntie for letting me use their domestic machines, and to my brother for reluctantly agreeing to our 10 minute modelling session.</p>
+  <img class="" src="meisze/images/construction.jpg" style="width:100%;">
+<br><br><br>
+<p>It feels a bit silly of me to suggest that I have the capacity to help… 😳 However when I am passionate I tend to figure out a way.
+<br><br>
+I don’t know my Avenue yet. I'm hoping that exposure to whatever needs doing on your end will help me refine my path.
+<br><br>
+I'm using the internet here for attention where I may be given the chance to get off the internet. I want to see the details and understand the process behind the scenes.
+<br><br>
+I want to learn how to work directly onto something. Observing from a distance means that I currently use one thing to understand the other, by getting up and close I could understand how to work directly upon the thing I am attempting to articulate.
+<br><br>
+I have lots to learn! 🤣</p>
+<br><br><br>
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Ce1x9C7rSUv/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:800px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Ce1x9C7rSUv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Ce1x9C7rSUv/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Junglee Zayn (@jungleezayn)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script>
+<br><br><br>
+<h3>I can take photos - these are all straight-out-of-camera  photos  - click to enlarge</h3>
+
+<a href="https://drive.google.com/drive/folders/1wpekFScVSGnu5vizJAnb_T4VbDxLUR12?usp=sharing"> <img class="zoom" src="meisze/images/pics.jpeg" style="width:100%;"></a>
+
+<p>and maintain a website.</p>
+<br>
+<h3>I cycle everywhere - Also for a bike courier job - here is my <a href="cv.pdf">[CV]</a></h3>
+  <img class="" src="meisze/images/cosy.jpeg" style="width:100%;">
+<p>and value comfort.</p>
+<br><br><br>
+<p>I learn fast too… or so I think! I’m 22 years old. I understand that maybe I don’t know what I’m talking about hahaha and mayyybee I’m being ridiculous but I am happy to be wrong and learn from it. 😎
+<br><br>
+Im sure you know what I mean when I say that I’ve lived through the depths of the dunning-kruger effect, I’m naïve and stupid and have nothing to show. I need a slap in the face and my head down focussed. Time to level up lol. I am hoping that this web-letter could be a testament to my potential?
+<br><br>
+What do I have to loose by writing to you? 😉 Gotta live in the moment innit.
+</p><br><br>
+  <img class="" src="meisze/images/heart.png" style="width:100%;">
+<br><br><br>
+<p>Hope I didn’t burn any bridges 😅</p>
+<br><br>
+<pre class="preholl">
+                                   ..::^^^~~~!!!!!!!!!!~~^:.                    
+                            ..:^^~~^^^::^7777777?77!~~^::::.                    
+                       .:^~~~^::.        ~77777!^:.                             
+                   :^~!!~:.              ~?777:                                 
+                 ~77??!.                 .!??!                                  
+                 ^!!7777~^^:..             ^!77~^::..                           
+                     ..:^^~~!!!!!~~~^^^:::....:^~~!!!!!!~~~~^^:::...            
+                   ..::^^^~~!777777???777!!!!!!~~:.  ...:::^^~~~!!!!!!!!~^:.    
+             .::^~~~^^:..    ~777777~^..     ..:~77!:              ..:^!77?77:  
+         :^~!~^::.           :7777~.             ^777:                 ^777!^   
+     .^!777^.                .7777.             :!777!           ..:^~!~^:.     
+     ~7???7~:..               :!7?!:..     ..:~!777777^   ..::^~~~~^:.          
+      .:^~~!!!!!!~~~^^:::....   .:~!!!!!!7777???7777777!~~~^^::.                
+              ....:::^^^~~~~!!!~~^^:...:::^^^~~!!!!777!~~^::.                   
+                             ..::^~77!^.           ...::^~!777!!~.              
+                                    ~?77^                   ~???7:              
+                                    !7777:              .:^!7!^:                
+                                 .^!77777!        ..:^~~~~^:.                   
+                       .....::^~!7?777777?!^^^^^~~~^^:.                         
+                       .:^~!!77777777!!!!~~^^::..                               
+                               .....                                            
+</pre>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br><br><br>
+  <img class="" src="meisze/TMS_2x2x.svg" style="width:100%;">
+</main>
+<footer>
+	<A HREF="#top">Back to top</A>
+</footer>
+</body>
+<script type="text/javascript">
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    var w = window,
+        d = document,
+        e = d.documentElement,
+        g = d.getElementsByTagName('body')[0],
+        x = w.innerWidth || e.clientWidth || g.clientWidth,
+        y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+    if (!isMobile() && x > 1024) {
+        // <![CDATA[
+        var colour = "#ECFE3B";
+        var sparkles = 120;
+
+        /****************************
+        *  Tinkerbell Magic Sparkle *
+        * (c) 2005 mf2fm web-design *
+        *  http://www.mf2fm.com/rv  *
+        * DON'T EDIT BELOW THIS BOX *
+        ****************************/
+        var x = ox = 400;
+        var y = oy = 300;
+        var swide = 800;
+        var shigh = 600;
+        var sleft = sdown = 0;
+        var tiny = new Array();
+        var star = new Array();
+        var starv = new Array();
+        var starx = new Array();
+        var stary = new Array();
+        var tinyx = new Array();
+        var tinyy = new Array();
+        var tinyv = new Array();
+
+        window.onload = function () {
+            if (document.getElementById) {
+                var i, rats, rlef, rdow;
+                for (var i = 0; i < sparkles; i++) {
+                    var rats = createDiv(3, 3);
+                    rats.style.visibility = "hidden";
+                    document.body.appendChild(tiny[i] = rats);
+                    starv[i] = 0;
+                    tinyv[i] = 0;
+                    var rats = createDiv(5, 5);
+                    rats.style.backgroundColor = "transparent";
+                    rats.style.visibility = "hidden";
+                    var rlef = createDiv(1, 5);
+                    var rdow = createDiv(5, 1);
+                    rats.appendChild(rlef);
+                    rats.appendChild(rdow);
+                    rlef.style.top = "2px";
+                    rlef.style.left = "0px";
+                    rdow.style.top = "0px";
+                    rdow.style.left = "2px";
+                    document.body.appendChild(star[i] = rats);
+                }
+                set_width();
+                sparkle();
+            }
+        }
+
+        function sparkle() {
+            var c;
+            if (x != ox || y != oy) {
+                ox = x;
+                oy = y;
+                for (c = 0; c < sparkles; c++) if (!starv[c]) {
+                    star[c].style.left = (starx[c] = x) + "px";
+                    star[c].style.top = (stary[c] = y) + "px";
+                    star[c].style.clip = "rect(0px, 5px, 5px, 0px)";
+                    star[c].style.visibility = "visible";
+                    starv[c] = 50;
+                    break;
+                }
+            }
+            for (c = 0; c < sparkles; c++) {
+                if (starv[c]) update_star(c);
+                if (tinyv[c]) update_tiny(c);
+            }
+            setTimeout("sparkle()", 40);
+        }
+
+        function update_star(i) {
+            if (--starv[i] == 25) star[i].style.clip = "rect(1px, 4px, 4px, 1px)";
+            if (starv[i]) {
+                stary[i] += 1 + Math.random() * 3;
+                if (stary[i] < shigh + sdown) {
+                    star[i].style.top = stary[i] + "px";
+                    starx[i] += (i % 5 - 2) / 5;
+                    star[i].style.left = starx[i] + "px";
+                }
+                else {
+                    star[i].style.visibility = "hidden";
+                    starv[i] = 0;
+                    return;
+                }
+            }
+            else {
+                tinyv[i] = 50;
+                tiny[i].style.top = (tinyy[i] = stary[i]) + "px";
+                tiny[i].style.left = (tinyx[i] = starx[i]) + "px";
+                tiny[i].style.width = "2px";
+                tiny[i].style.height = "2px";
+                star[i].style.visibility = "hidden";
+                tiny[i].style.visibility = "visible"
+            }
+        }
+
+        function update_tiny(i) {
+            if (--tinyv[i] == 25) {
+                tiny[i].style.width = "1px";
+                tiny[i].style.height = "1px";
+            }
+            if (tinyv[i]) {
+                tinyy[i] += 1 + Math.random() * 3;
+                if (tinyy[i] < shigh + sdown) {
+                    tiny[i].style.top = tinyy[i] + "px";
+                    tinyx[i] += (i % 5 - 2) / 5;
+                    tiny[i].style.left = tinyx[i] + "px";
+                }
+                else {
+                    tiny[i].style.visibility = "hidden";
+                    tinyv[i] = 0;
+                    return;
+                }
+            }
+            else tiny[i].style.visibility = "hidden";
+        }
+
+        document.onmousemove = mouse;
+        function mouse(e) {
+            set_scroll();
+            y = (e) ? e.pageY : event.y + sdown;
+            x = (e) ? e.pageX : event.x + sleft;
+        }
+
+        function set_scroll() {
+            if (typeof (self.pageYOffset) == "number") {
+                sdown = self.pageYOffset;
+                sleft = self.pageXOffset;
+            }
+            else if (document.body.scrollTop || document.body.scrollLeft) {
+                sdown = document.body.scrollTop;
+                sleft = document.body.scrollLeft;
+            }
+            else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+                sleft = document.documentElement.scrollLeft;
+                sdown = document.documentElement.scrollTop;
+            }
+            else {
+                sdown = 0;
+                sleft = 0;
+            }
+        }
+
+        window.onresize = set_width;
+        function set_width() {
+            if (typeof (self.innerWidth) == "number") {
+                swide = self.innerWidth;
+                shigh = self.innerHeight;
+            }
+            else if (document.documentElement && document.documentElement.clientWidth) {
+                swide = document.documentElement.clientWidth;
+                shigh = document.documentElement.clientHeight;
+            }
+            else if (document.body.clientWidth) {
+                swide = document.body.clientWidth;
+                shigh = document.body.clientHeight;
+            }
+        }
+
+        function createDiv(height, width) {
+            var div = document.createElement("div");
+            div.style.position = "absolute";
+            div.style.height = height + "px";
+            div.style.width = width + "px";
+            div.style.overflow = "hidden";
+            div.style.backgroundColor = colour;
+            return (div);
+        }
+        // ]]>
+    }
+</script>
+<!--
+<style type="text/css">
+    /* Circle Text Styles */
+    #outerCircleText {
+        /* Optional - DO NOT SET FONT-SIZE HERE, SET IT IN THE SCRIPT */
+        /* font-style: italic;
+        font-weight: bold;
+        font-family: 'comic sans ms', verdana, arial; */
+        color: #592F41;
+	font-family:  Helvetica ,arial,sans-serif !important;
+        /* End Optional */
+        /* Start Required - Do Not Edit */
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3000;
+        cursor: default;
+    }
+
+    #outerCircleText div {
+        position: relative;
+    }
+
+    #outerCircleText div div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+
+    /* End Required */
+    /* End Circle Text Styles */
+</style>
+<script type="text/javascript">
+    /* Circling text trail- Tim Tilton
+       Website: http://www.tempermedia.com/
+       Visit: http://www.dynamicdrive.com/ for Original Source and tons of scripts
+       Modified Here for more flexibility and modern browser support
+       Modifications as first seen in http://www.dynamicdrive.com/forums/
+       username:jscheuer1 - This notice must remain for legal use
+       */
+    ; (function () {
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        var w = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            x = w.innerWidth || e.clientWidth || g.clientWidth,
+            y = w.innerHeight || e.clientHeight || g.clientHeight;
+
+        if (!isMobile() && x > 1024) {
+            // Your message here (QUOTED STRING)
+            var msg = "Hi Mei Sze !";
+            /* THE REST OF THE EDITABLE VALUES BELOW ARE ALL UNQUOTED NUMBERS */
+            // Set font's style size for calculating dimensions
+            // Set to number of desired pixels font size (decimal and negative numbers not allowed)
+            var size = 24;
+            // Set both to 1 for plain circle, set one of them to 2 for oval
+            // Other numbers & decimals can have interesting effects, keep these low (0 to 3)
+            var circleY = 1.1; var circleX = 2;
+            // The larger this divisor, the smaller the spaces between letters
+            // (decimals allowed, not negative numbers)
+            var letter_spacing = 5;
+            // The larger this multiplier, the bigger the circle/oval
+            // (decimals allowed, not negative numbers, some rounding is applied)
+            var diameter = 14;
+            // Rotation speed, set it negative if you want it to spin clockwise (decimals allowed)
+            var rotation = 0.2;
+            // This is not the rotation speed, its the reaction speed, keep low!
+            // Set this to 1 or a decimal less than one (decimals allowed, not negative numbers)
+            var speed = 0.3;
+            ////////////////////// Stop Editing //////////////////////
+            if (!window.addEventListener && !window.attachEvent || !document.createElement) return;
+            msg = msg.split('');
+            var n = msg.length - 1, a = Math.round(size * diameter * 0.208333), currStep = 20,
+                ymouse = a * circleY + 20, xmouse = a * circleX + 20, y = [], x = [], Y = [], X = [],
+                o = document.createElement('div'), oi = document.createElement('div'),
+                b = document.compatMode && document.compatMode != "BackCompat" ? document.documentElement : document.body,
+                mouse = function (e) {
+                    e = e || window.event;
+                    ymouse = !isNaN(e.pageY) ? e.pageY : e.clientY; // y-position
+                    xmouse = !isNaN(e.pageX) ? e.pageX : e.clientX; // x-position
+                },
+                makecircle = function () { // rotation/positioning
+                    if (init.nopy) {
+                        o.style.top = (b || document.body).scrollTop + 'px';
+                        o.style.left = (b || document.body).scrollLeft + 'px';
+                    };
+                    currStep -= rotation;
+                    for (var d, i = n; i > -1; --i) { // makes the circle
+                        d = document.getElementById('iemsg' + i).style;
+                        d.top = Math.round(y[i] + a * Math.sin((currStep + i) / letter_spacing) * circleY - 15) + 'px';
+                        d.left = Math.round(x[i] + a * Math.cos((currStep + i) / letter_spacing) * circleX) + 'px';
+                    };
+                },
+                drag = function () { // makes the resistance
+                    y[0] = Y[0] += (ymouse - Y[0]) * speed;
+                    x[0] = X[0] += (xmouse - 20 - X[0]) * speed;
+                    for (var i = n; i > 0; --i) {
+                        y[i] = Y[i] += (y[i - 1] - Y[i]) * speed;
+                        x[i] = X[i] += (x[i - 1] - X[i]) * speed;
+                    };
+                    makecircle();
+                },
+                init = function () { // appends message divs, & sets initial values for positioning arrays
+                    if (!isNaN(window.pageYOffset)) {
+                        ymouse += window.pageYOffset;
+                        xmouse += window.pageXOffset;
+                    } else init.nopy = true;
+                    for (var d, i = n; i > -1; --i) {
+                        d = document.createElement('div'); d.id = 'iemsg' + i;
+                        d.style.height = d.style.width = a + 'px';
+                        d.appendChild(document.createTextNode(msg[i]));
+                        oi.appendChild(d); y[i] = x[i] = Y[i] = X[i] = 0;
+                    };
+                    o.appendChild(oi); document.body.appendChild(o);
+                    setInterval(drag, 25);
+                },
+                ascroll = function () {
+                    ymouse += window.pageYOffset;
+                    xmouse += window.pageXOffset;
+                    window.removeEventListener('scroll', ascroll, false);
+                };
+            o.id = 'outerCircleText'; o.style.fontSize = size + 'px';
+            if (window.addEventListener) {
+                window.addEventListener('load', init, false);
+                document.addEventListener('mouseover', mouse, false);
+                document.addEventListener('mousemove', mouse, false);
+                if (/Apple/.test(navigator.vendor))
+                    window.addEventListener('scroll', ascroll, false);
+            }
+            else if (window.attachEvent) {
+                window.attachEvent('onload', init);
+                document.attachEvent('onmousemove', mouse);
+            };
+        }
+    })();
+</script>
+-->
+</html>
+
