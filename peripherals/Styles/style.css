@@ -1,0 +1,65 @@
+html *{
+	  font-family: Courier
+}
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+p {
+    color: white;
+	text-align: justify; 
+}
+h4 {
+	color: White;
+}
+b {
+	color: White;
+}
+}
+h1 {
+	color: White;
+}
+.button {
+    background-color: #ff0000; /* RED */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover {background-color: #e81919}
+
+.button:active {
+  background-color: #b20000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #ff0000;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	float: bottom;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.img{
+	width:800px;
+}
