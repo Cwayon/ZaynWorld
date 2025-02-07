@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                margin-top: 20px;
+            }
+
+            #left {
+                width: 25%;
+                padding-left: 20px;
+            }
+
+            #right {
+                width: 75%;
+            }
+
+            .nav-button {
+                padding: 10px;
+                margin-bottom: 10px;
+                cursor: pointer;
+                background-color: white;
+                border: none;
+                width: 100%;
+            }
+
+            .nav-button.active {
+                background-color: #0066cc;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="left">
+                <button
+                    class="nav-button active"
+                    onclick="selectSection('section-1')"
+                >
+                    Section 1
+                </button>
+                <button class="nav-button" onclick="selectSection('section-2')">
+                    Section 2
+                </button>
+                <button class="nav-button" onclick="selectSection('section-3')">
+                    Section 3
+                </button>
+                <!-- Add more buttons as needed -->
+            </div>
+
+            <div id="right">
+                <h1 id="section-1">Language Patterns</h1>
+                <!-- Add content sections here -->
+            </div>
+        </div>
+
+        <script>
+            function selectSection(sectionId) {
+                // Remove active class from all buttons
+                document.querySelectorAll(".nav-button").forEach((button) => {
+                    button.classList.remove("active");
+                });
+
+                // Add active class to clicked button
+                document.getElementById(sectionId).classList.add("active");
+            }
+        </script>
+    </body>
+</html>
