@@ -1,0 +1,575 @@
+<!doctype html>
+<meta charset="utf-8" />
+<!--
+
+
+-->
+<html lang="en">
+    <head>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Salomon Project</title>
+        <style>
+            html * {
+                font-family: "Courier New", Courier, monospace;
+                -webkit-box-shadow: 0px 0px;
+                box-shadow: 0px 0px; /*cursor: url(styles/funbluepurple.cur) 0 0, pointer !important;*/
+            }
+            @font-face {
+                font-family: "Courier New", Courier, monospace;
+            }
+            body {
+                background-color: #663342 !important;
+                background-image: url("Images/downloads/background3.png") !important;
+            }
+            main {
+                background-color: #666342 !important; /*border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                box-shadow: 5px 5px #c4c4c4;
+                margin-bottom: 10px;
+                padding: 25px;*/
+                max-width: 1500px !important;
+            }
+            header {
+            }
+            h1 {
+                color: #c4c4c4 !important;
+            }
+            h4 {
+                color: #c4c4c4 !important;
+            }
+            p {
+                color: #c4c4c4 !important;
+                background-color: #663342 !important;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                /*box-shadow: 5px 5px #c4c4c4;*/
+                margin-bottom: 10px;
+                padding: 25px;
+                box-shadow: 5px 5px #c4c4c4;
+            }
+            /* unvisited link */
+            A {
+                text-decoration: none;
+            }
+            a:link {
+                color: white;
+            }
+            /*hover link*/
+            a:hover {
+                color: #640e27 !important;
+                background-color: #c4c4c4;
+            }
+            /* visited link */
+            a:visited {
+                color: #c4c4c4;
+            }
+            nav {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                padding: 4px;
+            }
+            pre {
+                font-family: IBM, monospace;
+                color: #c4c4c4 !important;
+                text-align: center;
+            }
+            ul {
+                color: #c4c4c4 !important;
+                font-size: 14px;
+            }
+            .dwnnav {
+                /*downloads navbar
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #c4c4c4;*/
+                font-size: 14px;
+            }
+
+            iframe {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                padding: 5px;
+                max-height: none;
+                max-width: 1200px;
+            }
+            img {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                padding: 0px;
+                background: #663342;
+                box-shadow: 5px 5px #c4c4c4;
+                max-height: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <footer>
+            <a name="top"></a>
+            <a href="projects.html">Return to Projects Page</a>
+        </footer>
+
+        <style>
+            .thin-divider {
+                width: 100%;
+                height: 1px; /* Thin line */
+                background: #c4c4c4; /* Color */
+                margin: 20px 0; /* Adjust spacing */
+            }
+        </style>
+
+        <style>
+            .page-number {
+                position: absolute;
+                bottom: 20px; /* Adjust spacing from bottom */
+                right: 20px; /* Adjust spacing from right */
+                font-size: 14px; /* Adjust size */
+                color: #c4c4c4; /* Change color if needed */
+                opacity: 0.8; /* Slight transparency */
+                font-family: "Courier New", "monospace"; /* Match your typography */
+            }
+
+            /* Ensure each page is relatively positioned so numbers stay inside */
+            .portfolio-page {
+                position: relative;
+                min-height: 100vh; /* Ensures it fills a page */
+            }
+        </style>
+
+        <style>
+            .thin-divider {
+                width: 100%;
+                height: 1px; /* Thin line */
+                background: #c4c4c4; /* Color */
+                margin: 20px 0; /* Adjust spacing */
+            }
+        </style>
+
+        <div class="page-divider"></div>
+        <!-- Page Layout -->
+        <div class="portfolio-page">
+            <!-- First Row: 3 Horizontal Columns -->
+            <div class="portfolio-row three-columns">
+                <div class="portfolio-section">
+                    <img
+                        src="Images/salomon/salomon.svg"
+                        style="box-shadow: none; border: none; background: none"
+                        width="790"
+                    />
+                </div>
+                <div class="portfolio-section"></div>
+                <div class="portfolio-section">
+                    <h4>Prototype - Proof Of Concept</h4>
+                </div>
+            </div>
+
+            <!--<div class="thin-divider"></div>-->
+
+            <!-- Second Row: Large Image -->
+            <div class="portfolio-row">
+                <img src="Images/salomon/cover.jpg" alt="Large Artwork" />
+            </div>
+
+            <!-- Third Row: 5 Horizontal Columns -->
+            <div class="portfolio-row five-columns">
+                <div class="portfolio-section"></div>
+                <div class="portfolio-section">
+                    <p>Professional Practice<br /></p>
+                </div>
+                <div class="portfolio-section"></div>
+                <div class="portfolio-section">
+                    <p>Zayn Shafiuddin<br />23028590<br />2025/02/18</p>
+                </div>
+                <div class="portfolio-section"></div>
+            </div>
+        </div>
+
+        <!-- Page Divider -->
+        <div class="page-divider"></div>
+
+        <style>
+            /* General Row Styling */
+            .portfolio-row {
+                display: flex;
+                gap: 20px; /* Spacing between columns */
+                margin-bottom: 20px;
+            }
+
+            /* First Row: 3 Equal Columns */
+            .three-columns .portfolio-section {
+                flex: 1; /* Each column takes equal space */
+            }
+
+            /* Second Row: Large Image */
+            .portfolio-row img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            /* Third Row: 5 Equal Columns */
+            .five-columns .portfolio-section {
+                flex: 1; /* Each column takes equal space */
+            }
+
+            /* Page Divider */
+            .page-divider {
+                width: 100%;
+                height: 50px;
+                margin: 40px 0;
+            }
+        </style>
+
+        <!-- Page 1: Large Image Left, Text Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template">
+                <img src="Images/salomon/mood.jpeg" alt="Artwork Title" />
+
+                <div class="portfolio-content">
+                    <div class="placeholder"></div>
+                    <div class="portfolio-text">
+                        <br />
+                        <div class="page-divider"></div>
+                        <div class="page-divider"></div>
+                        <div class="page-divider"></div>
+                    </div>
+                    <div class="placeholder">&nbsp;</div>
+                    <div class="portfolio-extra">
+                        <p>
+                            Concept:<br /><br />Visually, the design
+                            demonstrates the principle of form following
+                            function: Each part and placement specific purpose,
+                            emphasising clarity and modularity intuitively. This
+                            mood board captures the aesthetics of function,
+                            showcasing the structure that highlights the
+                            product’s engineered ambition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 1: Large Image Left, Text Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template">
+                <img src="Images/salomon/consume.jpeg" alt="Artwork Title" />
+
+                <div class="portfolio-content">
+                    <div class="placeholder"></div>
+                    <div class="portfolio-text"><br /><br /></div>
+                    <div class="placeholder">&nbsp;</div>
+                    <div class="portfolio-extra">
+                        <p>
+                            Dear Errolson, I wrote you a web-letter. Thank you
+                            for your time, Zayn.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 1: Large Image Left, Text Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template">
+                <img src="Images/salomon/trends.jpeg" alt="Artwork Title" />
+
+                <div class="portfolio-content">
+                    <div class="placeholder"></div>
+                    <div class="portfolio-text">
+                        <br />
+                        <div class="page-divider"></div>
+                        <div class="page-divider"></div>
+                        <div class="page-divider"></div>
+                    </div>
+                    <div class="placeholder">&nbsp;</div>
+                    <div class="portfolio-extra">
+                        <p>
+                            Trends:<br /><br />asdfsadfasdfasdfasdfasdfasd
+                            asdasdfadfasdg asdg asdg asdf asdf asdf asdf asdf
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Divider -->
+        <div class="page-divider"></div>
+
+        <!-- Page 3: Two Images Side by Side, Text Below -->
+        <div class="portfolio-page">
+            <div class="portfolio-template two-column">
+                <div class="image-container">
+                    <img
+                        src="Images/salomon/brace.jpg"
+                        style="max-width: 700px"
+                        alt="Artwork Title"
+                    />
+                    <div class="placeholder"></div>
+                    <img
+                        src="Images/salomon/sensifit.jpg"
+                        style="max-width: 700px"
+                        alt="Artwork Title"
+                    />
+                </div>
+
+                <div class="placeholder"></div>
+
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            The Brace acts as the main hub of this system. It's
+                            purpose is to stay stable and support mounting for
+                            peripheral modules.<br /><br />Proposal: £100~<br /><br />Modules
+                            featured below.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Divider -->
+        <div class="page-divider"></div>
+
+        <!-- Page 2: Image on Top, Text Below -->
+        <div class="portfolio-page">
+            <div class="portfolio-template column-layout">
+                <img
+                    src="Images/salomon/parcel.jpeg"
+                    alt="Artwork Title"
+                    style="max-width: 800px"
+                />
+
+                <div class="placeholder"></div>
+
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Container Parcel<br /><br />Proposal:
+                            £40~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Divider -->
+        <div class="page-divider"></div>
+
+        <!-- Page 4: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Expandable Cargo Shelf<br /><br />Proposal:
+                            £60~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range1.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 5: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Protective Laptop Case<br /><br />Proposal:
+                            £150~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range2.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 5: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Courier Network Node Antenna
+                            Rack<br /><br />Proposal: £30~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range3.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 6: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Aero Suspension Bag<br /><br />Proposal:
+                            £130~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range4.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 7: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Medical Kit<br /><br />Proposal:
+                            £40~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range5.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 8: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Temperature regulated Food
+                            Container<br /><br />Proposal: £90~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range6.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page 9: Text on Left, Large Image on Right -->
+        <div class="portfolio-page">
+            <div class="portfolio-template reverse-layout">
+                <div class="portfolio-content">
+                    <div class="portfolio-text">
+                        <p>
+                            Range Item:<br /><br />Soft Structured Bag<br /><br />Proposal:
+                            £100~
+                        </p>
+                    </div>
+                    <div class="placeholder"></div>
+                </div>
+
+                <img src="Images/salomon/range7.jpg" alt="Artwork Title" />
+            </div>
+        </div>
+
+        <!-- Page Divider -->
+        <div class="page-divider"></div>
+
+        <style>
+            /* General Page Layout */
+            .portfolio-page {
+                width: 100%;
+                max-width: 1400px;
+                margin: auto;
+                padding: 40px 20px;
+                box-sizing: border-box;
+            }
+
+            /* Page Divider */
+            .page-divider {
+                width: 100%;
+                height: 70px;
+                background: none;
+            }
+
+            /* Portfolio Layout */
+            .portfolio-template {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto auto;
+                gap: 20px;
+                align-items: start;
+            }
+
+            .portfolio-template.column-layout {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .portfolio-template.two-column {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .image-container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .portfolio-template.reverse-layout {
+                grid-template-columns: 1fr 2fr;
+            }
+
+            /* Image Styling */
+            .portfolio-template img {
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+
+            /* Placeholder for Spacing Customization */
+            .placeholder {
+                height: 20px;
+                width: 100%;
+            }
+
+            /* Text Content */
+            .portfolio-content {
+                display: grid;
+                grid-template-rows: auto auto;
+                gap: 20px;
+            }
+
+            .portfolio-text {
+                padding: 10px;
+            }
+
+            /* Print Styling */
+            @media print {
+                .portfolio-page {
+                    page-break-before: always;
+                }
+
+                .portfolio-template img {
+                    page-break-inside: avoid;
+                }
+            }
+        </style>
+
+        <footer>
+            <a href="#top">Back to top</a>
+        </footer>
+    </body>
+</html>
