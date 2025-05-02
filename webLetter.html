@@ -1,0 +1,395 @@
+<!doctype html>
+<meta charset="utf-8" />
+<!--
+
+
+-->
+<html lang="en">
+    <head>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Salomon Project</title>
+        <style>
+            html * {
+                font-family: "Courier New", Courier, monospace;
+                /*cursor: url(styles/funbluepurple.cur) 0 0, pointer !important;*/
+            }
+            @font-face {
+                font-family: "Courier New", Courier, monospace;
+            }
+            body {
+                background-color: #b6bab9 !important;
+                background-image: url("Images/downloads/background3.png") !important;
+                text-align: left !important;
+            }
+            main {
+                background-color: #959796 !important;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                /*box-shadow: 5px 5px #c4c4c4;*/
+                margin-bottom: 10px;
+                padding: 25px;
+                text-align: left !important;
+            }
+            header {
+                height: 111px;
+            }
+            h1 {
+                color: #ffffff !important;
+            }
+            h4 {
+                color: #ffffff !important;
+            }
+            p {
+                color: #ffffff !important;
+            }
+            /* unvisited link */
+            A {
+                text-decoration: none;
+            }
+            a:link {
+                color: #5b889e;
+            }
+            /*hover link*/
+            a:hover {
+                color: #959796 !important;
+                background-color: #ffffff;
+            }
+            /* visited link */
+            a:visited {
+                color: #5b5d9e;
+            }
+            nav {
+                padding-bottom: 10px;
+                padding-top: 10px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                padding: 4px;
+            }
+            pre {
+                font-family: IBM, monospace;
+                color: #c4c4c4 !important;
+                text-align: center;
+            }
+            ul {
+                color: #c4c4c4 !important;
+                font-size: 14px;
+            }
+            .dwnnav {
+                /*downloads navbar
+	border-style: dotted;
+	border-width: 2px;
+	border-color: #c4c4c4;*/
+                font-size: 14px;
+            }
+
+            iframe {
+                border-style: solid;
+                border-width: 1px;
+                border-color: #c4c4c4;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <p>
+                <a name="top"></a>
+                <svg
+                    width="200"
+                    viewBox="0 0 147 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="pointer-events: auto"
+                >
+                    <path
+                        d="M1.64353 13.5538C-0.547837 13.0495 -0.547844 9.91599 1.64352 9.41168L10.9749 7.40955C13.2803 6.87898 15.0777 2.54955 16.4133 0.820718C17.7942 -0.966836 20.9892 0.404142 20.6866 2.64583C20.2929 5.56304 19.9809 8.73971 19.9809 11.4828C19.9809 14.2258 20.2929 17.4025 20.6866 20.3197C20.9892 22.5614 17.7942 23.9324 16.4133 22.1448C15.0777 20.416 13.2803 16.0865 10.9749 15.556L1.64353 13.5538Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M29.1065 3.34311C29.1065 4.54724 28.134 5.52338 26.9343 5.52338C25.7347 5.52338 24.7622 4.54724 24.7622 3.34311C24.7622 2.13898 25.7347 1.16284 26.9343 1.16284C28.134 1.16284 29.1065 2.13898 29.1065 3.34311Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M36.0573 3.34311C36.0573 3.98531 35.5386 4.50592 34.8988 4.50592C34.259 4.50592 33.7403 3.98531 33.7403 3.34311C33.7403 2.70091 34.259 2.1803 34.8988 2.1803C35.5386 2.1803 36.0573 2.70091 36.0573 3.34311Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M36.0573 19.4771C36.0573 20.1193 35.5386 20.6399 34.8988 20.6399C34.259 20.6399 33.7403 20.1193 33.7403 19.4771C33.7403 18.8349 34.259 18.3143 34.8988 18.3143C35.5386 18.3143 36.0573 18.8349 36.0573 19.4771Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M43.8769 11.3374C43.8769 11.9796 43.3582 12.5002 42.7184 12.5002C42.0786 12.5002 41.56 11.9796 41.56 11.3374C41.56 10.6952 42.0786 10.1746 42.7184 10.1746C43.3582 10.1746 43.8769 10.6952 43.8769 11.3374Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M30.2649 11.4101C30.2649 13.2966 28.7414 14.8259 26.8619 14.8259C24.9825 14.8259 23.4589 13.2966 23.4589 11.4101C23.4589 9.52363 24.9825 7.99434 26.8619 7.99434C28.7414 7.99434 30.2649 9.52363 30.2649 11.4101Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M29.1065 19.4771C29.1065 20.6812 28.134 21.6574 26.9343 21.6574C25.7347 21.6574 24.7622 20.6812 24.7622 19.4771C24.7622 18.273 25.7347 17.2968 26.9343 17.2968C28.134 17.2968 29.1065 18.273 29.1065 19.4771Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M37.0709 11.3374C37.0709 12.5416 36.0984 13.5177 34.8988 13.5177C33.6992 13.5177 32.7267 12.5416 32.7267 11.3374C32.7267 10.1333 33.6992 9.15715 34.8988 9.15715C36.0984 9.15715 37.0709 10.1333 37.0709 11.3374Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M60.3418 19.3401C58.9864 19.3401 57.7884 19.0595 56.7477 18.4982C55.707 17.9369 54.8922 17.1478 54.3033 16.131C53.7144 15.1142 53.4199 13.9225 53.4199 12.5558C53.4199 11.1973 53.7144 10.0178 54.3033 9.01726C54.8922 8.0167 55.707 7.24797 56.7477 6.71108C57.7884 6.16606 58.9864 5.89355 60.3418 5.89355C61.3583 5.89355 62.2578 6.04404 63.0403 6.34503C63.8228 6.64601 64.4803 7.04867 65.0128 7.55302C65.5533 8.04923 65.9647 8.59832 66.2471 9.20029C66.5295 9.79412 66.6706 10.3879 66.6706 10.9818C66.6706 10.998 66.6706 11.0143 66.6706 11.0306C66.6706 11.0469 66.6706 11.0631 66.6706 11.0794H63.5123C63.5123 11.0387 63.5082 10.994 63.5002 10.9452C63.4921 10.8964 63.484 10.8476 63.476 10.7987C63.4114 10.3839 63.246 10.0097 62.9798 9.67616C62.7136 9.33451 62.3586 9.062 61.9149 8.85863C61.4712 8.65527 60.9347 8.55358 60.3055 8.55358C59.6359 8.55358 59.0227 8.70407 58.4661 9.00506C57.9175 9.2979 57.4778 9.74124 57.1471 10.3351C56.8244 10.9289 56.663 11.6692 56.663 12.5558C56.663 13.4344 56.8244 14.1828 57.1471 14.801C57.4698 15.4111 57.9054 15.8788 58.454 16.2042C59.0106 16.5215 59.6278 16.6801 60.3055 16.6801C61.0235 16.6801 61.6083 16.5703 62.0601 16.3506C62.52 16.1229 62.8669 15.8219 63.1008 15.4477C63.3348 15.0654 63.4679 14.6505 63.5002 14.2031H66.6706C66.6706 14.8051 66.5335 15.4111 66.2592 16.0212C65.9849 16.6232 65.5815 17.1763 65.0491 17.6807C64.5166 18.185 63.8551 18.5877 63.0645 18.8887C62.282 19.1896 61.3744 19.3401 60.3418 19.3401Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M75.6209 19.3279C74.2656 19.3279 73.0716 19.0432 72.039 18.4738C71.0064 17.8962 70.1956 17.099 69.6067 16.0822C69.0258 15.0654 68.7354 13.9021 68.7354 12.5924C68.7354 11.2746 69.0258 10.1154 69.6067 9.11487C70.1956 8.10618 71.0064 7.31712 72.039 6.74769C73.0716 6.17827 74.2656 5.89355 75.6209 5.89355C76.9763 5.89355 78.1702 6.17827 79.2029 6.74769C80.2355 7.31712 81.0422 8.10618 81.6231 9.11487C82.212 10.1154 82.5065 11.2746 82.5065 12.5924C82.5065 13.9021 82.212 15.0654 81.6231 16.0822C81.0422 17.099 80.2355 17.8962 79.2029 18.4738C78.1702 19.0432 76.9763 19.3279 75.6209 19.3279ZM75.6209 16.7045C76.3551 16.7045 76.9964 16.5337 77.545 16.192C78.0936 15.8504 78.5212 15.3745 78.8277 14.7644C79.1343 14.1462 79.2876 13.4222 79.2876 12.5924C79.2876 11.7627 79.1343 11.0469 78.8277 10.4449C78.5212 9.83479 78.0936 9.36298 77.545 9.02946C76.9964 8.69594 76.3551 8.52918 75.6209 8.52918C74.8949 8.52918 74.2535 8.69594 73.6969 9.02946C73.1483 9.36298 72.7207 9.83479 72.4141 10.4449C72.1076 11.0469 71.9543 11.7627 71.9543 12.5924C71.9543 13.4222 72.1076 14.1462 72.4141 14.7644C72.7207 15.3745 73.1483 15.8504 73.6969 16.192C74.2535 16.5337 74.8949 16.7045 75.6209 16.7045Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M85.1396 19.0717V6.11319H88.3222V10.4205L87.584 10.0056C87.6647 9.44433 87.8139 8.91557 88.0318 8.41936C88.2496 7.91501 88.54 7.47574 88.903 7.10155C89.2661 6.71922 89.7057 6.42231 90.2221 6.2108C90.7384 5.9993 91.3273 5.89355 91.9888 5.89355C92.5132 5.89355 92.9246 5.93423 93.2231 6.01557C93.5297 6.08878 93.7193 6.14979 93.7919 6.1986C93.6544 6.8949 93.2357 9.01429 93.2357 9.01429C93.2357 9.01429 92.3617 8.79762 91.7347 8.79762C91.0812 8.79762 90.5327 8.91151 90.0889 9.13928C89.6533 9.35891 89.3064 9.65989 89.0483 10.0422C88.7901 10.4164 88.6045 10.8313 88.4916 11.2868C88.3787 11.7342 88.3222 12.1816 88.3222 12.629V19.0717H85.1396Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M100.301 19.1815C99.8246 19.092 99.389 18.9253 98.9937 18.6812C98.5984 18.4372 98.2797 18.0793 98.0377 17.6074C97.7957 17.1356 97.6746 16.5133 97.6746 15.7405C97.6746 15.5616 97.6746 15.3826 97.6746 15.2037C97.6746 15.0166 97.6746 14.8254 97.6746 14.6302V9.01429H94.6373L95.2219 6.11319H95.8716C96.2911 6.11319 96.6218 6.09692 96.8639 6.06438C97.1059 6.02371 97.2834 5.93423 97.3963 5.79594C97.5093 5.65765 97.5819 5.44208 97.6141 5.14923C97.6545 4.84825 97.6746 4.43338 97.6746 3.90463V1.8425H100.869V6.11319H104.02V9.01429H100.869V12.7681C100.869 13.0629 100.869 14.6302 101.004 15.8893C101.121 16.9898 103.287 16.6822 103.959 16.3914V19.0717C102.837 19.4886 101.471 19.4015 100.301 19.1815Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M107.036 19.0717V6.11319H110.182V19.0717H107.036Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M119.689 19.3401C118.334 19.3401 117.136 19.0595 116.095 18.4982C115.054 17.9369 114.24 17.1478 113.651 16.131C113.062 15.1142 112.767 13.9225 112.767 12.5558C112.767 11.1973 113.062 10.0178 113.651 9.01726C114.24 8.0167 115.054 7.24797 116.095 6.71108C117.136 6.16606 118.334 5.89355 119.689 5.89355C120.706 5.89355 121.605 6.04404 122.388 6.34503C123.17 6.64601 123.828 7.04867 124.36 7.55302C124.901 8.04923 125.312 8.59832 125.595 9.20029C125.877 9.79412 126.018 10.3879 126.018 10.9818C126.018 10.998 126.018 11.0143 126.018 11.0306C126.018 11.0469 126.018 11.0631 126.018 11.0794H122.86C122.86 11.0387 122.856 10.994 122.848 10.9452C122.84 10.8964 122.831 10.8476 122.823 10.7987C122.759 10.3839 122.593 10.0097 122.327 9.67616C122.061 9.33451 121.706 9.062 121.262 8.85863C120.819 8.65527 120.282 8.55358 119.653 8.55358C118.983 8.55358 118.37 8.70407 117.814 9.00506C117.265 9.2979 116.825 9.74124 116.495 10.3351C116.172 10.9289 116.01 11.6692 116.01 12.5558C116.01 13.4344 116.172 14.1828 116.495 14.801C116.817 15.4111 117.253 15.8788 117.801 16.2042C118.358 16.5215 118.975 16.6801 119.653 16.6801C120.371 16.6801 120.956 16.5703 121.408 16.3506C121.867 16.1229 122.214 15.8219 122.448 15.4477C122.682 15.0654 122.815 14.6505 122.848 14.2031H126.018C126.018 14.8051 125.881 15.4111 125.607 16.0212C125.332 16.6232 124.929 17.1763 124.397 17.6807C123.864 18.185 123.203 18.5877 122.412 18.8887C121.629 19.1896 120.722 19.3401 119.689 19.3401Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M133.056 19.3401C132.096 19.3401 131.253 19.1896 130.527 18.8887C129.801 18.5795 129.232 18.1362 128.821 17.5586C128.41 16.9811 128.204 16.2856 128.204 15.4721C128.204 14.5854 128.442 13.8574 128.918 13.2879C129.402 12.7104 130.051 12.267 130.866 11.9579C131.681 11.6407 132.584 11.4373 133.577 11.3478C135.045 11.2014 136.07 11.0631 136.65 10.933C137.239 10.7947 137.534 10.575 137.534 10.2741C137.534 10.2659 137.534 10.2619 137.534 10.2619C137.534 10.2537 137.534 10.2497 137.534 10.2497C137.534 9.68023 137.28 9.24096 136.771 8.93184C136.263 8.62273 135.545 8.46817 134.617 8.46817C133.641 8.46817 132.891 8.64306 132.367 8.99285C131.85 9.33451 131.592 9.87953 131.592 10.6279H128.446C128.446 9.61109 128.712 8.75288 129.245 8.0533C129.785 7.34559 130.523 6.8087 131.459 6.44264C132.395 6.07658 133.456 5.89355 134.642 5.89355C135.747 5.89355 136.759 6.06031 137.679 6.39383C138.599 6.72735 139.337 7.2317 139.894 7.90688C140.45 8.58205 140.729 9.42399 140.729 10.4327C140.729 10.6035 140.729 10.7743 140.729 10.9452C140.729 11.116 140.729 11.2868 140.729 11.4577V16.3384C140.729 16.6476 140.737 16.9526 140.753 17.2536C140.777 17.5464 140.821 17.8108 140.886 18.0467C140.967 18.307 141.063 18.5267 141.176 18.7056C141.289 18.8846 141.378 19.0066 141.442 19.0717H138.296C138.24 19.0147 138.159 18.9049 138.054 18.7422C137.957 18.5714 137.869 18.3762 137.788 18.1565C137.707 17.9125 137.647 17.6522 137.606 17.3756C137.566 17.0909 137.546 16.7777 137.546 16.4361L138.175 16.8753C137.933 17.3715 137.562 17.8067 137.062 18.1809C136.57 18.547 135.981 18.8317 135.295 19.0351C134.609 19.2384 133.863 19.3401 133.056 19.3401ZM133.831 16.8143C134.492 16.8143 135.106 16.7004 135.67 16.4727C136.235 16.2449 136.691 15.8951 137.038 15.4233C137.385 14.9433 137.558 14.3292 137.558 13.5808V11.8481L138.333 12.7267C137.816 12.9219 137.195 13.0846 136.469 13.2147C135.743 13.3368 135.009 13.4344 134.267 13.5076C133.315 13.5971 132.597 13.7638 132.113 14.0079C131.637 14.2519 131.399 14.6505 131.399 15.2037C131.399 15.7405 131.6 16.1432 132.004 16.4117C132.407 16.6801 133.016 16.8143 133.831 16.8143Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M146.999 0V19.0717H143.865V0H146.999Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M107.266 3.61621C107.653 3.89279 108.105 4.03108 108.621 4.03108C109.129 4.03108 109.573 3.89279 109.952 3.61621C110.332 3.3315 110.521 2.93697 110.521 2.43262C110.521 1.93641 110.332 1.55001 109.952 1.27343C109.573 0.996856 109.129 0.858567 108.621 0.858567C108.105 0.858567 107.653 0.996856 107.266 1.27343C106.887 1.55001 106.697 1.93641 106.697 2.43262C106.697 2.93697 106.887 3.3315 107.266 3.61621Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M101.19 25.9197V34.4227L99.8826 33.0559H106.842V35.7763H98.2891V25.9197H101.19Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M112.039 34.0021V31.5577H118.439V34.0021H112.039ZM117.206 25.9197L121.389 35.7763H118.289L114.903 27.2471H115.687L112.288 35.7763H109.201L113.372 25.9197H117.206Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M130.846 30.9663L131.082 30.4143C131.788 30.4318 132.377 30.5501 132.85 30.7692C133.323 30.9794 133.676 31.2729 133.908 31.6497C134.141 32.0264 134.257 32.4689 134.257 32.977C134.257 33.5115 134.141 33.9934 133.908 34.4227C133.684 34.8432 133.34 35.1762 132.875 35.4215C132.41 35.658 131.833 35.7763 131.145 35.7763H124.036L124.745 30.7166L124.036 25.9197H130.883C131.746 25.9197 132.419 26.1344 132.9 26.5637C133.39 26.9842 133.635 27.5712 133.635 28.3247C133.635 28.7453 133.543 29.1439 133.361 29.5207C133.186 29.8974 132.892 30.2172 132.477 30.48C132.07 30.7341 131.526 30.8962 130.846 30.9663ZM126.874 35.0929L125.766 33.6999H130.286C130.609 33.6999 130.862 33.6166 131.045 33.4502C131.228 33.2749 131.319 33.034 131.319 32.7273C131.319 32.4382 131.223 32.2017 131.033 32.0177C130.842 31.8249 130.564 31.7285 130.198 31.7285H126.439V29.7046H129.788C130.045 29.7046 130.261 29.6214 130.435 29.4549C130.609 29.2885 130.696 29.0694 130.696 28.7978C130.696 28.57 130.618 28.3817 130.46 28.2327C130.31 28.075 130.095 27.9962 129.812 27.9962H125.779L126.874 26.6031L127.509 30.7166L126.874 35.0929Z"
+                        fill="currentColor"
+                    ></path>
+                    <path
+                        d="M137.189 32.5434H140.128C140.161 32.7711 140.264 32.9727 140.439 33.1479C140.621 33.3144 140.866 33.4458 141.173 33.5422C141.48 33.6298 141.841 33.6736 142.256 33.6736C142.829 33.6736 143.273 33.6035 143.589 33.4633C143.912 33.3231 144.074 33.1085 144.074 32.8193C144.074 32.6178 143.983 32.4557 143.8 32.3331C143.618 32.2017 143.257 32.114 142.717 32.0702L141.074 31.9257C139.729 31.8205 138.754 31.5139 138.148 31.0057C137.55 30.4888 137.252 29.7966 137.252 28.9293C137.252 28.2196 137.447 27.6282 137.837 27.1551C138.227 26.6732 138.77 26.3096 139.468 26.0643C140.165 25.8189 140.987 25.6963 141.933 25.6963C142.846 25.6963 143.655 25.8321 144.36 26.1037C145.074 26.3753 145.639 26.7608 146.054 27.2602C146.477 27.7508 146.709 28.3247 146.751 28.9818H143.813C143.779 28.7891 143.684 28.6226 143.526 28.4824C143.377 28.3335 143.161 28.2196 142.879 28.1407C142.597 28.0619 142.261 28.0224 141.871 28.0224C141.356 28.0224 140.945 28.0882 140.638 28.2196C140.339 28.351 140.19 28.5481 140.19 28.811C140.19 29.0037 140.277 29.1614 140.451 29.2841C140.634 29.4068 140.966 29.49 141.447 29.5338L143.252 29.6915C144.149 29.7616 144.871 29.9105 145.419 30.1383C145.975 30.3574 146.377 30.6596 146.626 31.0451C146.875 31.4219 147 31.8994 147 32.4776C147 33.1786 146.801 33.7962 146.402 34.3307C146.004 34.8564 145.444 35.2682 144.722 35.566C144.008 35.8552 143.169 35.9997 142.207 35.9997C141.219 35.9997 140.352 35.8552 139.605 35.566C138.858 35.2769 138.272 34.8739 137.849 34.357C137.426 33.8313 137.206 33.2267 137.189 32.5434Z"
+                        fill="currentColor"
+                    ></path>
+                </svg>
+            </p>
+        </header>
+        <nav>
+            <ul>
+                <li class="nav">
+                    <span class="dwnnav"><a href="about.html">About</a></span>
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"
+                        ><a href="projects.html">Projects</a></span
+                    >
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"><a href="fun.html">Fun</a></span>
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"><a href="links.html">Links</a></span>
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"
+                        ><a href="gallery.html">Gallery</a></span
+                    >
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"><a href="misc.html">Misc</a></span>
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"
+                        ><a href="downloads.html">Downloads</a></span
+                    >
+                </li>
+                <li class="nav">
+                    <span class="dwnnav"
+                        ><a href="guestbook.html">Guestbook</a></span
+                    >
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <iframe
+                width="780"
+                height="440"
+                src="https://www.youtube.com/embed/CzvVWhV8GkY?si=7qg_LDBIjz80EUss"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+            <br /><br />
+            <h1>Rationale</h1>
+            <p>
+                The concept has been inspired by the requirements of the brief
+                and the fact that Salomon is an apparel brand that is motivated
+                by innovation and performance driven design: a blend of
+                sportswear and performance (Forbes, 2025). I appreciate the
+                brands forward looking approach and have designed a concept that
+                responds to this.
+            </p>
+            <p>
+                This project focuses on reimagining how bike couriers carries
+                their load by addressing the ergonomic inefficiencies and
+                functional limitations inherent in traditional carry systems.
+                Drawing inspiration from the Unix philosophy (Behind the
+                building of unix-like operating systems such as MacOS, BSD &
+                Linux)—which promotes building tools that do one job only and
+                one job well, the design introduces a modular system of tools.
+                Suckless Software- (keeping things simple, minimal and useable)
+                is a specialised application of the unix philosophy directed
+                towards the development of tools. These tools can be chained
+                together to build systems that are both transparent and
+                functional, allowing for flexibility via composition. This
+                system balances accessibility, stability, and capacity, offering
+                a versatile solution for various disciplines beyond courier work
+                when considering the system’s modular nature.
+            </p>
+            <p>
+                The aim is to create a system that evolves with its users,
+                improving workflow and expandability while addressing the
+                ergonomic inefficiencies and functional limitations inherent in
+                traditional carry systems. By embracing principles drawn from
+                both the Unix and Suckless philosophies, the system minimises
+                complexity—eliminating unnecessary “bloat” and instead focuses
+                on clear, intentional construction. In the world of design that
+                balances function and aesthetics, overly complex patterns with
+                extra parts that serve no purpose are a common sight. In IT
+                terms, this would be called “bloat”. The Suckless movement is
+                born from a digital world using bloated software as the
+                standard. From a design perspective, there is too little
+                attention towards the philosophy of how something is constructed
+                and this is an issue because bloated software always has more
+                bugs, just as a more complex garment construction has more loose
+                ends and points of weakness. Products designed using the
+                Suckless philosophy feature inherent repairability.
+            </p>
+            <p>
+                While initially targeting couriers, the design is envisioned to
+                resonate to a broader demographic, including professionals in
+                construction, lifestyle hobbyists, and those operating in
+                high-pressure environments (such as conflict zones or film sets)
+                will benefit from the product’s modularity and transparency.
+                Tinkerers are empowered to develop personalised modules and
+                modifications according to their own requirements.<br />
+                This is a carry system rather than a “bag”. Necessary because
+                the market for tinkerers and makers is growing continuously,
+                with each in search for a solution to their unique work style.
+                The system’s modularity provides relevance across these varied
+                use cases.
+            </p>
+            <p>
+                Rooted in a background in engineering, this design thinking
+                moves beyond the conventional carry methods, presenting a
+                configurable system of modular components. A stable brace and
+                easily accessible containers anchor the design, enhancing both
+                comfort and practicality for users. The visible exoskeleton
+                structure ensures transparency in function, repairability, and
+                user engagement. Complementing this approach is Salomon’s
+                philosophy of visible technology, which celebrates the beauty of
+                an exposed, functional framework. By exposing it’s exoskeletal
+                structure, the design not only reinforces technical integrity
+                but also invites users to engage directly with the system’s
+                inner workings, encouraging dynamic use from a deeper
+                understanding and connection between the product and user.
+            </p>
+            <p>
+                The concept draws inspiration from wearable technology,
+                reimagining the bag as an extension of the body, through design
+                philosophies of the software world. The design encourages a
+                seamless integration into professional and personal workflows.
+                In the same way that digital systems thrive on minimalism and
+                transparency- avoiding unnecessary complexity that can lead to
+                bugs: this product rejects overly complex construction in favour
+                of clarity and efficiency. There is a distinct style in how a
+                machine works, and by exposing and also highlighting the
+                mechanics of its assembly using colour and material choice, the
+                product communicates both functionality and aesthetic elegance,
+                allowing users to immediately understand and adapt the system.
+                Aesthetic detailing such as colour emphasises the integration of
+                visible technology using overall neutral tone. Architectural
+                precision moulded the silhouette and the system itself acts as a
+                compatibility layer between human-centric ergonomics and the
+                machined rigidity of utilitarian modules. Lightweight yet
+                robust, the structure is designed to withstand diverse demands
+                without compromising comfort.
+            </p>
+            <p>
+                Key details include modular components, intuitive assembly, and
+                strategically placed reinforcement points (including a
+                stabilisation system). Each element is designed to enhance
+                usability and encourage customisation. Complimenting this
+                approach is Salomons philosophy of visible technology, which
+                celebrates the beauty of exposed exoskeletons and metaphorically
+                looking into the machine… inviting users to engage directly with
+                the products workings. Visible architecture reinforces technical
+                integrity and also encourages the user to understand and work
+                alongside the prescribed functions.
+            </p>
+            <p>
+                Drawing from experience in using decentralised networks: the
+                carry case/parcel module of the carry system has printed
+                graphics that role-play a near world where couriers are no
+                longer operating at the mercy of large logistics companies. The
+                courier has been decentralised and use protocols maintained
+                autonomously (DAOs) to compute exchange markets, addresses,
+                tracking and insurance using decentralised ledgers, “naming and
+                certificate authority” (handshake.org, 2021) bringing control
+                and efficiency to individuals. The world-building includes the
+                fact that these individuals would supply their own
+                workwear/gear. On the specific container/parcel used in this
+                physical project, the reusable parcel has a registered owner and
+                has an assigned to an addressee. It will make it’s way to it’s
+                destination by couriers collecting and dropping it off at nodes:
+                reducing unnecessary packaging and providing freedom and
+                fulfilment via work to all parties involved. Payments are
+                distributed via “proof of work”/ contribution using blockchain.
+            </p>
+            <p>
+                The design is a tool. Not only to create things, but also ideas.
+                “Commodified Imaginations” (Dunne & Raby, 2013)
+            </p>
+            <h4>References</h4>
+            <ul>
+                <li>
+                    Cam Vigliotta, C. (2025) Inside Salomon, The French Brand
+                    Blending Sportstyle And Performance. Available at:
+                    https://www.forbes.com/sites/forbes-personal-shopper/2025/01/30/
+                    salomon-headquarters-tour/ (Accessed on 14/02/25).
+                </li>
+                <li>
+                    Handshake.org. (n.d.), 2021. Handshake. [online] Available
+                    at:
+                    <a href="https://handshake.org">https://handshake.org</a>
+                </li>
+                <li>
+                    Dunne, A. & Raby, F., 2013. Speculative Everything: Design,
+                    Fiction, and Social Dreaming.
+                </li>
+            </ul>
+        </main>
+        <footer>
+            <a href="#top">Back to top</a>
+        </footer>
+    </body>
+</html>
